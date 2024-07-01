@@ -1,3 +1,4 @@
+(function () {
 var $parcel$global =
 typeof globalThis !== 'undefined'
   ? globalThis
@@ -8,6 +9,9 @@ typeof globalThis !== 'undefined'
   : typeof global !== 'undefined'
   ? global
   : {};
+function $parcel$interopDefault(a) {
+  return a && a.__esModule ? a.default : a;
+}
 var $parcel$modules = {};
 var $parcel$inits = {};
 
@@ -36,7 +40,9 @@ if (parcelRequire == null) {
 
   $parcel$global["parcelRequired7c6"] = parcelRequire;
 }
-parcelRequire.register("1E1MB", function(module, exports) {
+parcelRequire.register("kdl1L", function(module, exports) {
+
+var $1JNQi = parcelRequire("1JNQi");
 (function() {
     /** Used as a safe reference for `undefined` in pre-ES5 environments. */ var undefined;
     /** Used as the semantic version number. */ var VERSION = "4.17.21";
@@ -1207,8 +1213,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
    * var defer = _.runInContext({ 'setTimeout': setImmediate }).defer;
    */ var runInContext1 = function runInContext(context) {
         context = context == null ? root : _.defaults(root.Object(), context, _.pick(root, contextProps));
-        /** Built-in constructor references. */ var Array = context.Array, Date = context.Date, Error = context.Error, Function = context.Function, Math = context.Math, Object = context.Object, RegExp = context.RegExp, String = context.String, TypeError = context.TypeError;
-        /** Used for built-in method references. */ var arrayProto = Array.prototype, funcProto = Function.prototype, objectProto = Object.prototype;
+        /** Built-in constructor references. */ var Array = context.Array, Date = context.Date, Error = context.Error, _$Function = context.Function, Math = context.Math, _$Object = context.Object, _$RegExp = context.RegExp, String = context.String, TypeError = context.TypeError;
+        /** Used for built-in method references. */ var arrayProto = Array.prototype, funcProto = _$Function.prototype, objectProto = _$Object.prototype;
         /** Used to detect overreaching core-js shims. */ var coreJsData = context["__core-js_shared__"];
         /** Used to resolve the decompiled source of functions. */ var funcToString = funcProto.toString;
         /** Used to check objects for own properties. */ var hasOwnProperty = objectProto.hasOwnProperty;
@@ -1222,20 +1228,20 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
      * of values.
      */ var nativeObjectToString = objectProto.toString;
-        /** Used to infer the `Object` constructor. */ var objectCtorString = funcToString.call(Object);
+        /** Used to infer the `Object` constructor. */ var objectCtorString = funcToString.call(_$Object);
         /** Used to restore the original `_` reference in `_.noConflict`. */ var oldDash = root._;
-        /** Used to detect if a method is native. */ var reIsNative = RegExp("^" + funcToString.call(hasOwnProperty).replace(reRegExpChar, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
-        /** Built-in value references. */ var Buffer = moduleExports ? context.Buffer : undefined, Symbol = context.Symbol, Uint8Array = context.Uint8Array, allocUnsafe = Buffer ? Buffer.allocUnsafe : undefined, getPrototype = overArg(Object.getPrototypeOf, Object), objectCreate = Object.create, propertyIsEnumerable = objectProto.propertyIsEnumerable, splice = arrayProto.splice, spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : undefined, symIterator = Symbol ? Symbol.iterator : undefined, symToStringTag = Symbol ? Symbol.toStringTag : undefined;
+        /** Used to detect if a method is native. */ var reIsNative = _$RegExp("^" + funcToString.call(hasOwnProperty).replace(reRegExpChar, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
+        /** Built-in value references. */ var Buffer = moduleExports ? context.Buffer : undefined, Symbol = context.Symbol, Uint8Array = context.Uint8Array, allocUnsafe = Buffer ? Buffer.allocUnsafe : undefined, getPrototype = overArg(_$Object.getPrototypeOf, _$Object), objectCreate = _$Object.create, propertyIsEnumerable = objectProto.propertyIsEnumerable, splice = arrayProto.splice, spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : undefined, symIterator = Symbol ? Symbol.iterator : undefined, symToStringTag = Symbol ? Symbol.toStringTag : undefined;
         var defineProperty = function() {
             try {
-                var func = getNative(Object, "defineProperty");
+                var func = getNative(_$Object, "defineProperty");
                 func({}, "", {});
                 return func;
             } catch (e) {}
         }();
         /** Mocked built-ins. */ var ctxClearTimeout = context.clearTimeout !== root.clearTimeout && context.clearTimeout, ctxNow = Date && Date.now !== root.Date.now && Date.now, ctxSetTimeout = context.setTimeout !== root.setTimeout && context.setTimeout;
-        /* Built-in method references for those with the same name as other `lodash` methods. */ var nativeCeil = Math.ceil, nativeFloor = Math.floor, nativeGetSymbols = Object.getOwnPropertySymbols, nativeIsBuffer = Buffer ? Buffer.isBuffer : undefined, nativeIsFinite = context.isFinite, nativeJoin = arrayProto.join, nativeKeys = overArg(Object.keys, Object), nativeMax = Math.max, nativeMin = Math.min, nativeNow = Date.now, nativeParseInt = context.parseInt, nativeRandom = Math.random, nativeReverse = arrayProto.reverse;
-        /* Built-in method references that are verified to be native. */ var DataView = getNative(context, "DataView"), Map = getNative(context, "Map"), Promise = getNative(context, "Promise"), Set = getNative(context, "Set"), WeakMap = getNative(context, "WeakMap"), nativeCreate = getNative(Object, "create");
+        /* Built-in method references for those with the same name as other `lodash` methods. */ var nativeCeil = Math.ceil, nativeFloor = Math.floor, nativeGetSymbols = _$Object.getOwnPropertySymbols, nativeIsBuffer = Buffer ? Buffer.isBuffer : undefined, nativeIsFinite = context.isFinite, nativeJoin = arrayProto.join, nativeKeys = overArg(_$Object.keys, _$Object), nativeMax = Math.max, nativeMin = Math.min, nativeNow = Date.now, nativeParseInt = context.parseInt, nativeRandom = Math.random, nativeReverse = arrayProto.reverse;
+        /* Built-in method references that are verified to be native. */ var DataView = getNative(context, "DataView"), Map = getNative(context, "Map"), Promise = getNative(context, "Promise"), Set = getNative(context, "Set"), WeakMap = getNative(context, "WeakMap"), nativeCreate = getNative(_$Object, "create");
         /** Used to store function metadata. */ var metaMap = WeakMap && new WeakMap;
         /** Used to lookup unminified function names. */ var realNames = {};
         /** Used to detect maps, sets, and weakmaps. */ var dataViewCtorString = toSource(DataView), mapCtorString = toSource(Map), promiseCtorString = toSource(Promise), setCtorString = toSource(Set), weakMapCtorString = toSource(WeakMap);
@@ -1376,9 +1382,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
                 if (!isObject(proto)) return {};
                 if (objectCreate) return objectCreate(proto);
                 object.prototype = proto;
-                var result = new object;
+                var _$result = new object;
                 object.prototype = undefined;
-                return result;
+                return _$result;
             };
         }();
         /**
@@ -1476,14 +1482,14 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @memberOf LazyWrapper
      * @returns {Object} Returns the cloned `LazyWrapper` object.
      */ function lazyClone() {
-            var result = new LazyWrapper(this.__wrapped__);
-            result.__actions__ = copyArray(this.__actions__);
-            result.__dir__ = this.__dir__;
-            result.__filtered__ = this.__filtered__;
-            result.__iteratees__ = copyArray(this.__iteratees__);
-            result.__takeCount__ = this.__takeCount__;
-            result.__views__ = copyArray(this.__views__);
-            return result;
+            var _$result = new LazyWrapper(this.__wrapped__);
+            _$result.__actions__ = copyArray(this.__actions__);
+            _$result.__dir__ = this.__dir__;
+            _$result.__filtered__ = this.__filtered__;
+            _$result.__iteratees__ = copyArray(this.__iteratees__);
+            _$result.__takeCount__ = this.__takeCount__;
+            _$result.__views__ = copyArray(this.__views__);
+            return _$result;
         }
         /**
      * Reverses the direction of lazy iteration.
@@ -1494,14 +1500,14 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {Object} Returns the new reversed `LazyWrapper` object.
      */ function lazyReverse() {
             if (this.__filtered__) {
-                var result = new LazyWrapper(this);
-                result.__dir__ = -1;
-                result.__filtered__ = true;
+                var _$result = new LazyWrapper(this);
+                _$result.__dir__ = -1;
+                _$result.__filtered__ = true;
             } else {
-                result = this.clone();
-                result.__dir__ *= -1;
+                _$result = this.clone();
+                _$result.__dir__ *= -1;
             }
-            return result;
+            return _$result;
         }
         /**
      * Extracts the unwrapped value from its lazy wrapper.
@@ -1513,21 +1519,21 @@ parcelRequire.register("1E1MB", function(module, exports) {
      */ function lazyValue() {
             var array = this.__wrapped__.value(), dir = this.__dir__, isArr = isArray(array), isRight = dir < 0, arrLength = isArr ? array.length : 0, view = getView(0, arrLength, this.__views__), start = view.start, end = view.end, length = end - start, index = isRight ? end : start - 1, iteratees = this.__iteratees__, iterLength = iteratees.length, resIndex = 0, takeCount = nativeMin(length, this.__takeCount__);
             if (!isArr || !isRight && arrLength == length && takeCount == length) return baseWrapperValue(array, this.__actions__);
-            var result = [];
+            var _$result = [];
             outer: while((length--) && resIndex < takeCount){
                 index += dir;
                 var iterIndex = -1, value = array[index];
                 while(++iterIndex < iterLength){
-                    var data = iteratees[iterIndex], iteratee = data.iteratee, type = data.type, computed = iteratee(value);
+                    var data = iteratees[iterIndex], _$iteratee = data.iteratee, type = data.type, computed = _$iteratee(value);
                     if (type == LAZY_MAP_FLAG) value = computed;
                     else if (!computed) {
                         if (type == LAZY_FILTER_FLAG) continue outer;
                         else break outer;
                     }
                 }
-                result[resIndex++] = value;
+                _$result[resIndex++] = value;
             }
-            return result;
+            return _$result;
         }
         // Ensure `LazyWrapper` is an instance of `baseLodash`.
         LazyWrapper.prototype = baseCreate(baseLodash.prototype);
@@ -1566,9 +1572,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {string} key The key of the value to remove.
      * @returns {boolean} Returns `true` if the entry was removed, else `false`.
      */ function hashDelete(key) {
-            var result = this.has(key) && delete this.__data__[key];
-            this.size -= result ? 1 : 0;
-            return result;
+            var _$result = this.has(key) && delete this.__data__[key];
+            this.size -= _$result ? 1 : 0;
+            return _$result;
         }
         /**
      * Gets the hash value for `key`.
@@ -1581,8 +1587,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
      */ function hashGet(key) {
             var data = this.__data__;
             if (nativeCreate) {
-                var result = data[key];
-                return result === HASH_UNDEFINED ? undefined : result;
+                var _$result = data[key];
+                return _$result === HASH_UNDEFINED ? undefined : _$result;
             }
             return hasOwnProperty.call(data, key) ? data[key] : undefined;
         }
@@ -1746,9 +1752,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {string} key The key of the value to remove.
      * @returns {boolean} Returns `true` if the entry was removed, else `false`.
      */ function mapCacheDelete(key) {
-            var result = getMapData(this, key)["delete"](key);
-            this.size -= result ? 1 : 0;
-            return result;
+            var _$result = getMapData(this, key)["delete"](key);
+            this.size -= _$result ? 1 : 0;
+            return _$result;
         }
         /**
      * Gets the map value for `key`.
@@ -1782,9 +1788,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {*} value The value to set.
      * @returns {Object} Returns the map cache instance.
      */ function mapCacheSet(key, value) {
-            var data = getMapData(this, key), size = data.size;
+            var data = getMapData(this, key), _$size = data.size;
             data.set(key, value);
-            this.size += data.size == size ? 0 : 1;
+            this.size += data.size == _$size ? 0 : 1;
             return this;
         }
         // Add methods to `MapCache`.
@@ -1861,9 +1867,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {string} key The key of the value to remove.
      * @returns {boolean} Returns `true` if the entry was removed, else `false`.
      */ function stackDelete(key) {
-            var data = this.__data__, result = data["delete"](key);
+            var data = this.__data__, _$result = data["delete"](key);
             this.size = data.size;
-            return result;
+            return _$result;
         }
         /**
      * Gets the stack value for `key`.
@@ -1928,11 +1934,11 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {boolean} inherited Specify returning inherited property names.
      * @returns {Array} Returns the array of property names.
      */ function arrayLikeKeys(value, inherited) {
-            var isArr = isArray(value), isArg = !isArr && isArguments(value), isBuff = !isArr && !isArg && isBuffer(value), isType = !isArr && !isArg && !isBuff && isTypedArray(value), skipIndexes = isArr || isArg || isBuff || isType, result = skipIndexes ? baseTimes(value.length, String) : [], length = result.length;
+            var isArr = isArray(value), isArg = !isArr && isArguments(value), isBuff = !isArr && !isArg && isBuffer(value), isType = !isArr && !isArg && !isBuff && isTypedArray(value), skipIndexes = isArr || isArg || isBuff || isType, _$result = skipIndexes ? baseTimes(value.length, String) : [], length = _$result.length;
             for(var key in value)if ((inherited || hasOwnProperty.call(value, key)) && !(skipIndexes && // Safari 9 has enumerable `arguments.length` in strict mode.
             (key == "length" || isBuff && (key == "offset" || key == "parent") || isType && (key == "buffer" || key == "byteLength" || key == "byteOffset") || // Skip index properties.
-            isIndex(key, length)))) result.push(key);
-            return result;
+            isIndex(key, length)))) _$result.push(key);
+            return _$result;
         }
         /**
      * A specialized version of `_.sample` for arrays.
@@ -2064,9 +2070,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {string[]} paths The property paths to pick.
      * @returns {Array} Returns the picked elements.
      */ function baseAt(object, paths) {
-            var index = -1, length = paths.length, result = Array(length), skip = object == null;
-            while(++index < length)result[index] = skip ? undefined : get(object, paths[index]);
-            return result;
+            var index = -1, length = paths.length, _$result = Array(length), skip = object == null;
+            while(++index < length)_$result[index] = skip ? undefined : get(object, paths[index]);
+            return _$result;
         }
         /**
      * The base implementation of `_.clamp` which doesn't coerce arguments.
@@ -2099,35 +2105,35 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Object} [stack] Tracks traversed objects and their clone counterparts.
      * @returns {*} Returns the cloned value.
      */ function baseClone(value, bitmask, customizer, key1, object, stack) {
-            var result, isDeep = bitmask & CLONE_DEEP_FLAG, isFlat = bitmask & CLONE_FLAT_FLAG, isFull = bitmask & CLONE_SYMBOLS_FLAG;
-            if (customizer) result = object ? customizer(value, key1, object, stack) : customizer(value);
-            if (result !== undefined) return result;
+            var _$result, isDeep = bitmask & CLONE_DEEP_FLAG, isFlat = bitmask & CLONE_FLAT_FLAG, isFull = bitmask & CLONE_SYMBOLS_FLAG;
+            if (customizer) _$result = object ? customizer(value, key1, object, stack) : customizer(value);
+            if (_$result !== undefined) return _$result;
             if (!isObject(value)) return value;
             var isArr = isArray(value);
             if (isArr) {
-                result = initCloneArray(value);
-                if (!isDeep) return copyArray(value, result);
+                _$result = initCloneArray(value);
+                if (!isDeep) return copyArray(value, _$result);
             } else {
                 var tag = getTag(value), isFunc = tag == funcTag || tag == genTag;
                 if (isBuffer(value)) return cloneBuffer(value, isDeep);
                 if (tag == objectTag || tag == argsTag || isFunc && !object) {
-                    result = isFlat || isFunc ? {} : initCloneObject(value);
-                    if (!isDeep) return isFlat ? copySymbolsIn(value, baseAssignIn(result, value)) : copySymbols(value, baseAssign(result, value));
+                    _$result = isFlat || isFunc ? {} : initCloneObject(value);
+                    if (!isDeep) return isFlat ? copySymbolsIn(value, baseAssignIn(_$result, value)) : copySymbols(value, baseAssign(_$result, value));
                 } else {
                     if (!cloneableTags[tag]) return object ? value : {};
-                    result = initCloneByTag(value, tag, isDeep);
+                    _$result = initCloneByTag(value, tag, isDeep);
                 }
             }
             // Check for circular references and return its corresponding clone.
             stack || (stack = new Stack);
             var stacked = stack.get(value);
             if (stacked) return stacked;
-            stack.set(value, result);
+            stack.set(value, _$result);
             if (isSet(value)) value.forEach(function(subValue) {
-                result.add(baseClone(subValue, bitmask, customizer, subValue, value, stack));
+                _$result.add(baseClone(subValue, bitmask, customizer, subValue, value, stack));
             });
             else if (isMap(value)) value.forEach(function(subValue, key) {
-                result.set(key, baseClone(subValue, bitmask, customizer, key, value, stack));
+                _$result.set(key, baseClone(subValue, bitmask, customizer, key, value, stack));
             });
             var keysFunc = isFull ? isFlat ? getAllKeysIn : getAllKeys : isFlat ? keysIn : keys;
             var props = isArr ? undefined : keysFunc(value);
@@ -2137,9 +2143,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
                     subValue = value[key];
                 }
                 // Recursively populate clone (susceptible to call stack limits).
-                assignValue(result, key, baseClone(subValue, bitmask, customizer, key, value, stack));
+                assignValue(_$result, key, baseClone(subValue, bitmask, customizer, key, value, stack));
             });
-            return result;
+            return _$result;
         }
         /**
      * The base implementation of `_.conforms` which doesn't clone `source`.
@@ -2163,7 +2169,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      */ function baseConformsTo(object, source, props) {
             var length = props.length;
             if (object == null) return !length;
-            object = Object(object);
+            object = _$Object(object);
             while(length--){
                 var key = props[length], predicate = source[key], value = object[key];
                 if (value === undefined && !(key in object) || !predicate(value)) return false;
@@ -2196,14 +2202,14 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} [comparator] The comparator invoked per element.
      * @returns {Array} Returns the new array of filtered values.
      */ function baseDifference(array, values, iteratee, comparator) {
-            var index = -1, includes = arrayIncludes, isCommon = true, length = array.length, result = [], valuesLength = values.length;
-            if (!length) return result;
+            var index = -1, _$includes = arrayIncludes, isCommon = true, length = array.length, _$result = [], valuesLength = values.length;
+            if (!length) return _$result;
             if (iteratee) values = arrayMap(values, baseUnary(iteratee));
             if (comparator) {
-                includes = arrayIncludesWith;
+                _$includes = arrayIncludesWith;
                 isCommon = false;
             } else if (values.length >= LARGE_ARRAY_SIZE) {
-                includes = cacheHas;
+                _$includes = cacheHas;
                 isCommon = false;
                 values = new SetCache(values);
             }
@@ -2215,10 +2221,10 @@ parcelRequire.register("1E1MB", function(module, exports) {
                     while(valuesIndex--){
                         if (values[valuesIndex] === computed) continue outer;
                     }
-                    result.push(value);
-                } else if (!includes(values, computed, comparator)) result.push(value);
+                    _$result.push(value);
+                } else if (!_$includes(values, computed, comparator)) _$result.push(value);
             }
-            return result;
+            return _$result;
         }
         /**
      * The base implementation of `_.forEach` without support for iteratee shorthands.
@@ -2245,12 +2251,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {boolean} Returns `true` if all elements pass the predicate check,
      *  else `false`
      */ function baseEvery(collection4, predicate) {
-            var result = true;
+            var _$result = true;
             baseEach(collection4, function(value, index, collection) {
-                result = !!predicate(value, index, collection);
-                return result;
+                _$result = !!predicate(value, index, collection);
+                return _$result;
             });
-            return result;
+            return _$result;
         }
         /**
      * The base implementation of methods like `_.max` and `_.min` which accepts a
@@ -2265,9 +2271,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
             var index = -1, length = array.length;
             while(++index < length){
                 var value = array[index], current = iteratee(value);
-                if (current != null && (computed === undefined ? current === current && !isSymbol(current) : comparator(current, computed))) var computed = current, result = value;
+                if (current != null && (computed === undefined ? current === current && !isSymbol(current) : comparator(current, computed))) var computed = current, _$result = value;
             }
-            return result;
+            return _$result;
         }
         /**
      * The base implementation of `_.fill` without an iteratee call guard.
@@ -2296,11 +2302,11 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} predicate The function invoked per iteration.
      * @returns {Array} Returns the new filtered array.
      */ function baseFilter(collection5, predicate) {
-            var result = [];
+            var _$result = [];
             baseEach(collection5, function(value, index, collection) {
-                if (predicate(value, index, collection)) result.push(value);
+                if (predicate(value, index, collection)) _$result.push(value);
             });
-            return result;
+            return _$result;
         }
         /**
      * The base implementation of `_.flatten` with support for restricting flattening.
@@ -2404,8 +2410,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} symbolsFunc The function to get the symbols of `object`.
      * @returns {Array} Returns the array of property names and symbols.
      */ function baseGetAllKeys(object, keysFunc, symbolsFunc) {
-            var result = keysFunc(object);
-            return isArray(object) ? result : arrayPush(result, symbolsFunc(object));
+            var _$result = keysFunc(object);
+            return isArray(object) ? _$result : arrayPush(_$result, symbolsFunc(object));
         }
         /**
      * The base implementation of `getTag` without fallbacks for buggy environments.
@@ -2415,7 +2421,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {string} Returns the `toStringTag`.
      */ function baseGetTag(value) {
             if (value == null) return value === undefined ? undefinedTag : nullTag;
-            return symToStringTag && symToStringTag in Object(value) ? getRawTag(value) : objectToString(value);
+            return symToStringTag && symToStringTag in _$Object(value) ? getRawTag(value) : objectToString(value);
         }
         /**
      * The base implementation of `_.gt` which doesn't coerce arguments.
@@ -2446,7 +2452,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Array|string} key The key to check.
      * @returns {boolean} Returns `true` if `key` exists, else `false`.
      */ function baseHasIn(object, key) {
-            return object != null && key in Object(object);
+            return object != null && key in _$Object(object);
         }
         /**
      * The base implementation of `_.inRange` which doesn't coerce arguments.
@@ -2469,7 +2475,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} [comparator] The comparator invoked per element.
      * @returns {Array} Returns the new array of shared values.
      */ function baseIntersection(arrays, iteratee, comparator) {
-            var includes = comparator ? arrayIncludesWith : arrayIncludes, length = arrays[0].length, othLength = arrays.length, othIndex = othLength, caches = Array(othLength), maxLength = Infinity, result = [];
+            var _$includes = comparator ? arrayIncludesWith : arrayIncludes, length = arrays[0].length, othLength = arrays.length, othIndex = othLength, caches = Array(othLength), maxLength = Infinity, _$result = [];
             while(othIndex--){
                 var array = arrays[othIndex];
                 if (othIndex && iteratee) array = arrayMap(array, baseUnary(iteratee));
@@ -2478,20 +2484,20 @@ parcelRequire.register("1E1MB", function(module, exports) {
             }
             array = arrays[0];
             var index = -1, seen = caches[0];
-            outer: while(++index < length && result.length < maxLength){
+            outer: while(++index < length && _$result.length < maxLength){
                 var value = array[index], computed = iteratee ? iteratee(value) : value;
                 value = comparator || value !== 0 ? value : 0;
-                if (!(seen ? cacheHas(seen, computed) : includes(result, computed, comparator))) {
+                if (!(seen ? cacheHas(seen, computed) : _$includes(_$result, computed, comparator))) {
                     othIndex = othLength;
                     while(--othIndex){
                         var cache = caches[othIndex];
-                        if (!(cache ? cacheHas(cache, computed) : includes(arrays[othIndex], computed, comparator))) continue outer;
+                        if (!(cache ? cacheHas(cache, computed) : _$includes(arrays[othIndex], computed, comparator))) continue outer;
                     }
                     if (seen) seen.push(computed);
-                    result.push(value);
+                    _$result.push(value);
                 }
             }
-            return result;
+            return _$result;
         }
         /**
      * The base implementation of `_.invert` and `_.invertBy` which inverts
@@ -2629,7 +2635,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      */ function baseIsMatch(object, source, matchData, customizer) {
             var index = matchData.length, length = index, noCustomizer = !customizer;
             if (object == null) return !length;
-            object = Object(object);
+            object = _$Object(object);
             while(index--){
                 var data = matchData[index];
                 if (noCustomizer && data[2] ? data[1] !== object[data[0]] : !(data[0] in object)) return false;
@@ -2641,8 +2647,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
                     if (objValue === undefined && !(key in object)) return false;
                 } else {
                     var stack = new Stack;
-                    if (customizer) var result = customizer(objValue, srcValue, key, object, source, stack);
-                    if (!(result === undefined ? baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG, customizer, stack) : result)) return false;
+                    if (customizer) var _$result = customizer(objValue, srcValue, key, object, source, stack);
+                    if (!(_$result === undefined ? baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG, customizer, stack) : _$result)) return false;
                 }
             }
             return true;
@@ -2708,9 +2714,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {Array} Returns the array of property names.
      */ function baseKeys(object) {
             if (!isPrototype(object)) return nativeKeys(object);
-            var result = [];
-            for(var key in Object(object))if (hasOwnProperty.call(object, key) && key != "constructor") result.push(key);
-            return result;
+            var _$result = [];
+            for(var key in _$Object(object))if (hasOwnProperty.call(object, key) && key != "constructor") _$result.push(key);
+            return _$result;
         }
         /**
      * The base implementation of `_.keysIn` which doesn't treat sparse arrays as dense.
@@ -2720,9 +2726,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {Array} Returns the array of property names.
      */ function baseKeysIn(object) {
             if (!isObject(object)) return nativeKeysIn(object);
-            var isProto = isPrototype(object), result = [];
-            for(var key in object)if (!(key == "constructor" && (isProto || !hasOwnProperty.call(object, key)))) result.push(key);
-            return result;
+            var isProto = isPrototype(object), _$result = [];
+            for(var key in object)if (!(key == "constructor" && (isProto || !hasOwnProperty.call(object, key)))) _$result.push(key);
+            return _$result;
         }
         /**
      * The base implementation of `_.lt` which doesn't coerce arguments.
@@ -2743,11 +2749,11 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} iteratee The function invoked per iteration.
      * @returns {Array} Returns the new mapped array.
      */ function baseMap(collection6, iteratee) {
-            var index = -1, result = isArrayLike(collection6) ? Array(collection6.length) : [];
+            var index = -1, _$result = isArrayLike(collection6) ? Array(collection6.length) : [];
             baseEach(collection6, function(value, key, collection) {
-                result[++index] = iteratee(value, key, collection);
+                _$result[++index] = iteratee(value, key, collection);
             });
-            return result;
+            return _$result;
         }
         /**
      * The base implementation of `_.matches` which doesn't clone `source`.
@@ -2880,7 +2886,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
             ];
             var index = -1;
             iteratees = arrayMap(iteratees, baseUnary(getIteratee()));
-            var result = baseMap(collection, function(value, key, collection) {
+            var _$result = baseMap(collection, function(value, key, collection) {
                 var criteria = arrayMap(iteratees, function(iteratee) {
                     return iteratee(value);
                 });
@@ -2890,7 +2896,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
                     "value": value
                 };
             });
-            return baseSortBy(result, function(object, other) {
+            return baseSortBy(_$result, function(object, other) {
                 return compareMultiple(object, other, orders);
             });
         }
@@ -2916,12 +2922,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} predicate The function invoked per property.
      * @returns {Object} Returns the new object.
      */ function basePickBy(object, paths, predicate) {
-            var index = -1, length = paths.length, result = {};
+            var index = -1, length = paths.length, _$result = {};
             while(++index < length){
                 var path = paths[index], value = baseGet(object, path);
-                if (predicate(value, path)) baseSet(result, castPath(path, object), value);
+                if (predicate(value, path)) baseSet(_$result, castPath(path, object), value);
             }
-            return result;
+            return _$result;
         }
         /**
      * A specialized version of `baseProperty` which supports deep paths.
@@ -2945,12 +2951,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} [comparator] The comparator invoked per element.
      * @returns {Array} Returns `array`.
      */ function basePullAll(array, values, iteratee, comparator) {
-            var indexOf = comparator ? baseIndexOfWith : baseIndexOf, index = -1, length = values.length, seen = array;
+            var _$indexOf = comparator ? baseIndexOfWith : baseIndexOf, index = -1, length = values.length, seen = array;
             if (array === values) values = copyArray(values);
             if (iteratee) seen = arrayMap(array, baseUnary(iteratee));
             while(++index < length){
                 var fromIndex = 0, value = values[index], computed = iteratee ? iteratee(value) : value;
-                while((fromIndex = indexOf(seen, computed, fromIndex, comparator)) > -1){
+                while((fromIndex = _$indexOf(seen, computed, fromIndex, comparator)) > -1){
                     if (seen !== array) splice.call(seen, fromIndex, 1);
                     splice.call(array, fromIndex, 1);
                 }
@@ -2999,12 +3005,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {boolean} [fromRight] Specify iterating from right to left.
      * @returns {Array} Returns the range of numbers.
      */ function baseRange(start, end, step, fromRight) {
-            var index = -1, length = nativeMax(nativeCeil((end - start) / (step || 1)), 0), result = Array(length);
+            var index = -1, length = nativeMax(nativeCeil((end - start) / (step || 1)), 0), _$result = Array(length);
             while(length--){
-                result[fromRight ? length : ++index] = start;
+                _$result[fromRight ? length : ++index] = start;
                 start += step;
             }
-            return result;
+            return _$result;
         }
         /**
      * The base implementation of `_.repeat` which doesn't coerce arguments.
@@ -3014,16 +3020,16 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {number} n The number of times to repeat the string.
      * @returns {string} Returns the repeated string.
      */ function baseRepeat(string, n) {
-            var result = "";
-            if (!string || n < 1 || n > MAX_SAFE_INTEGER) return result;
+            var _$result = "";
+            if (!string || n < 1 || n > MAX_SAFE_INTEGER) return _$result;
             // Leverage the exponentiation by squaring algorithm for a faster repeat.
             // See https://en.wikipedia.org/wiki/Exponentiation_by_squaring for more details.
             do {
-                if (n % 2) result += string;
+                if (n % 2) _$result += string;
                 n = nativeFloor(n / 2);
                 if (n) string += string;
             }while (n);
-            return result;
+            return _$result;
         }
         /**
      * The base implementation of `_.rest` which doesn't validate or coerce arguments.
@@ -3088,7 +3094,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} func The function to associate metadata with.
      * @param {*} data The metadata.
      * @returns {Function} Returns `func`.
-     */ var baseSetData = !metaMap ? identity : function(func, data) {
+     */ var baseSetData = !metaMap ? identity : function baseSetData(func, data) {
             metaMap.set(func, data);
             return func;
         };
@@ -3099,7 +3105,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} func The function to modify.
      * @param {Function} string The `toString` result.
      * @returns {Function} Returns `func`.
-     */ var baseSetToString = !defineProperty ? identity : function(func, string) {
+     */ var baseSetToString = !defineProperty ? identity : function baseSetToString(func, string) {
             return defineProperty(func, "toString", {
                 "configurable": true,
                 "enumerable": false,
@@ -3131,9 +3137,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
             if (end < 0) end += length;
             length = start > end ? 0 : end - start >>> 0;
             start >>>= 0;
-            var result = Array(length);
-            while(++index < length)result[index] = array[index + start];
-            return result;
+            var _$result = Array(length);
+            while(++index < length)_$result[index] = array[index + start];
+            return _$result;
         }
         /**
      * The base implementation of `_.some` without support for iteratee shorthands.
@@ -3144,12 +3150,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {boolean} Returns `true` if any element passes the predicate check,
      *  else `false`.
      */ function baseSome(collection7, predicate) {
-            var result;
+            var _$result;
             baseEach(collection7, function(value, index, collection) {
-                result = predicate(value, index, collection);
-                return !result;
+                _$result = predicate(value, index, collection);
+                return !_$result;
             });
-            return !!result;
+            return !!_$result;
         }
         /**
      * The base implementation of `_.sortedIndex` and `_.sortedLastIndex` which
@@ -3213,15 +3219,15 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} [iteratee] The iteratee invoked per element.
      * @returns {Array} Returns the new duplicate free array.
      */ function baseSortedUniq(array, iteratee) {
-            var index = -1, length = array.length, resIndex = 0, result = [];
+            var index = -1, length = array.length, resIndex = 0, _$result = [];
             while(++index < length){
                 var value = array[index], computed = iteratee ? iteratee(value) : value;
                 if (!index || !eq(computed, seen)) {
                     var seen = computed;
-                    result[resIndex++] = value === 0 ? 0 : value;
+                    _$result[resIndex++] = value === 0 ? 0 : value;
                 }
             }
-            return result;
+            return _$result;
         }
         /**
      * The base implementation of `_.toNumber` which doesn't ensure correct
@@ -3248,8 +3254,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
             if (isArray(value)) // Recursively convert values (susceptible to call stack limits).
             return arrayMap(value, baseToString) + "";
             if (isSymbol(value)) return symbolToString ? symbolToString.call(value) : "";
-            var result = value + "";
-            return result == "0" && 1 / value == -INFINITY ? "-0" : result;
+            var _$result = value + "";
+            return _$result == "0" && 1 / value == -INFINITY ? "-0" : _$result;
         }
         /**
      * The base implementation of `_.uniqBy` without support for iteratee shorthands.
@@ -3260,17 +3266,17 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} [comparator] The comparator invoked per element.
      * @returns {Array} Returns the new duplicate free array.
      */ function baseUniq(array, iteratee, comparator) {
-            var index = -1, includes = arrayIncludes, length = array.length, isCommon = true, result = [], seen = result;
+            var index = -1, _$includes = arrayIncludes, length = array.length, isCommon = true, _$result = [], seen = _$result;
             if (comparator) {
                 isCommon = false;
-                includes = arrayIncludesWith;
+                _$includes = arrayIncludesWith;
             } else if (length >= LARGE_ARRAY_SIZE) {
-                var set = iteratee ? null : createSet(array);
-                if (set) return setToArray(set);
+                var _$set = iteratee ? null : createSet(array);
+                if (_$set) return setToArray(_$set);
                 isCommon = false;
-                includes = cacheHas;
+                _$includes = cacheHas;
                 seen = new SetCache;
-            } else seen = iteratee ? [] : result;
+            } else seen = iteratee ? [] : _$result;
             outer: while(++index < length){
                 var value = array[index], computed = iteratee ? iteratee(value) : value;
                 value = comparator || value !== 0 ? value : 0;
@@ -3280,13 +3286,13 @@ parcelRequire.register("1E1MB", function(module, exports) {
                         if (seen[seenIndex] === computed) continue outer;
                     }
                     if (iteratee) seen.push(computed);
-                    result.push(value);
-                } else if (!includes(seen, computed, comparator)) {
-                    if (seen !== result) seen.push(computed);
-                    result.push(value);
+                    _$result.push(value);
+                } else if (!_$includes(seen, computed, comparator)) {
+                    if (seen !== _$result) seen.push(computed);
+                    _$result.push(value);
                 }
             }
-            return result;
+            return _$result;
         }
         /**
      * The base implementation of `_.unset`.
@@ -3337,13 +3343,13 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Array} actions Actions to perform to resolve the unwrapped value.
      * @returns {*} Returns the resolved value.
      */ function baseWrapperValue(value, actions) {
-            var result2 = value;
-            if (result2 instanceof LazyWrapper) result2 = result2.value();
+            var _$result = value;
+            if (_$result instanceof LazyWrapper) _$result = _$result.value();
             return arrayReduce(actions, function(result, action) {
                 return action.func.apply(action.thisArg, arrayPush([
                     result
                 ], action.args));
-            }, result2);
+            }, _$result);
         }
         /**
      * The base implementation of methods like `_.xor`, without support for
@@ -3357,12 +3363,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      */ function baseXor(arrays, iteratee, comparator) {
             var length = arrays.length;
             if (length < 2) return length ? baseUniq(arrays[0]) : [];
-            var index = -1, result = Array(length);
+            var index = -1, _$result = Array(length);
             while(++index < length){
                 var array = arrays[index], othIndex = -1;
-                while(++othIndex < length)if (othIndex != index) result[index] = baseDifference(result[index] || array, arrays[othIndex], iteratee, comparator);
+                while(++othIndex < length)if (othIndex != index) _$result[index] = baseDifference(_$result[index] || array, arrays[othIndex], iteratee, comparator);
             }
-            return baseUniq(baseFlatten(result, 1), iteratee, comparator);
+            return baseUniq(baseFlatten(_$result, 1), iteratee, comparator);
         }
         /**
      * This base implementation of `_.zipObject` which assigns values using `assignFunc`.
@@ -3373,12 +3379,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} assignFunc The function to assign values.
      * @returns {Object} Returns the new object.
      */ function baseZipObject(props, values, assignFunc) {
-            var index = -1, length = props.length, valsLength = values.length, result = {};
+            var index = -1, length = props.length, valsLength = values.length, _$result = {};
             while(++index < length){
                 var value = index < valsLength ? values[index] : undefined;
-                assignFunc(result, props[index], value);
+                assignFunc(_$result, props[index], value);
             }
-            return result;
+            return _$result;
         }
         /**
      * Casts `value` to an empty array if it's not an array like object.
@@ -3450,9 +3456,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {Buffer} Returns the cloned buffer.
      */ function cloneBuffer(buffer, isDeep) {
             if (isDeep) return buffer.slice();
-            var length = buffer.length, result = allocUnsafe ? allocUnsafe(length) : new buffer.constructor(length);
-            buffer.copy(result);
-            return result;
+            var length = buffer.length, _$result = allocUnsafe ? allocUnsafe(length) : new buffer.constructor(length);
+            buffer.copy(_$result);
+            return _$result;
         }
         /**
      * Creates a clone of `arrayBuffer`.
@@ -3461,9 +3467,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {ArrayBuffer} arrayBuffer The array buffer to clone.
      * @returns {ArrayBuffer} Returns the cloned array buffer.
      */ function cloneArrayBuffer(arrayBuffer) {
-            var result = new arrayBuffer.constructor(arrayBuffer.byteLength);
-            new Uint8Array(result).set(new Uint8Array(arrayBuffer));
-            return result;
+            var _$result = new arrayBuffer.constructor(arrayBuffer.byteLength);
+            new Uint8Array(_$result).set(new Uint8Array(arrayBuffer));
+            return _$result;
         }
         /**
      * Creates a clone of `dataView`.
@@ -3483,9 +3489,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Object} regexp The regexp to clone.
      * @returns {Object} Returns the cloned regexp.
      */ function cloneRegExp(regexp) {
-            var result = new regexp.constructor(regexp.source, reFlags.exec(regexp));
-            result.lastIndex = regexp.lastIndex;
-            return result;
+            var _$result = new regexp.constructor(regexp.source, reFlags.exec(regexp));
+            _$result.lastIndex = regexp.lastIndex;
+            return _$result;
         }
         /**
      * Creates a clone of the `symbol` object.
@@ -3494,7 +3500,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Object} symbol The symbol object to clone.
      * @returns {Object} Returns the cloned symbol object.
      */ function cloneSymbol(symbol) {
-            return symbolValueOf ? Object(symbolValueOf.call(symbol)) : {};
+            return symbolValueOf ? _$Object(symbolValueOf.call(symbol)) : {};
         }
         /**
      * Creates a clone of `typedArray`.
@@ -3539,11 +3545,11 @@ parcelRequire.register("1E1MB", function(module, exports) {
      */ function compareMultiple(object, other, orders) {
             var index = -1, objCriteria = object.criteria, othCriteria = other.criteria, length = objCriteria.length, ordersLength = orders.length;
             while(++index < length){
-                var result = compareAscending(objCriteria[index], othCriteria[index]);
-                if (result) {
-                    if (index >= ordersLength) return result;
+                var _$result = compareAscending(objCriteria[index], othCriteria[index]);
+                if (_$result) {
+                    if (index >= ordersLength) return _$result;
                     var order = orders[index];
-                    return result * (order == "desc" ? -1 : 1);
+                    return _$result * (order == "desc" ? -1 : 1);
                 }
             }
             // Fixes an `Array#sort` bug in the JS engine embedded in Adobe applications
@@ -3566,11 +3572,11 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @params {boolean} [isCurried] Specify composing for a curried function.
      * @returns {Array} Returns the new array of composed arguments.
      */ function composeArgs(args, partials, holders, isCurried) {
-            var argsIndex = -1, argsLength = args.length, holdersLength = holders.length, leftIndex = -1, leftLength = partials.length, rangeLength = nativeMax(argsLength - holdersLength, 0), result = Array(leftLength + rangeLength), isUncurried = !isCurried;
-            while(++leftIndex < leftLength)result[leftIndex] = partials[leftIndex];
-            while(++argsIndex < holdersLength)if (isUncurried || argsIndex < argsLength) result[holders[argsIndex]] = args[argsIndex];
-            while(rangeLength--)result[leftIndex++] = args[argsIndex++];
-            return result;
+            var argsIndex = -1, argsLength = args.length, holdersLength = holders.length, leftIndex = -1, leftLength = partials.length, rangeLength = nativeMax(argsLength - holdersLength, 0), _$result = Array(leftLength + rangeLength), isUncurried = !isCurried;
+            while(++leftIndex < leftLength)_$result[leftIndex] = partials[leftIndex];
+            while(++argsIndex < holdersLength)if (isUncurried || argsIndex < argsLength) _$result[holders[argsIndex]] = args[argsIndex];
+            while(rangeLength--)_$result[leftIndex++] = args[argsIndex++];
+            return _$result;
         }
         /**
      * This function is like `composeArgs` except that the arguments composition
@@ -3583,12 +3589,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @params {boolean} [isCurried] Specify composing for a curried function.
      * @returns {Array} Returns the new array of composed arguments.
      */ function composeArgsRight(args, partials, holders, isCurried) {
-            var argsIndex = -1, argsLength = args.length, holdersIndex = -1, holdersLength = holders.length, rightIndex = -1, rightLength = partials.length, rangeLength = nativeMax(argsLength - holdersLength, 0), result = Array(rangeLength + rightLength), isUncurried = !isCurried;
-            while(++argsIndex < rangeLength)result[argsIndex] = args[argsIndex];
+            var argsIndex = -1, argsLength = args.length, holdersIndex = -1, holdersLength = holders.length, rightIndex = -1, rightLength = partials.length, rangeLength = nativeMax(argsLength - holdersLength, 0), _$result = Array(rangeLength + rightLength), isUncurried = !isCurried;
+            while(++argsIndex < rangeLength)_$result[argsIndex] = args[argsIndex];
             var offset = argsIndex;
-            while(++rightIndex < rightLength)result[offset + rightIndex] = partials[rightIndex];
-            while(++holdersIndex < holdersLength)if (isUncurried || argsIndex < argsLength) result[offset + holders[holdersIndex]] = args[argsIndex++];
-            return result;
+            while(++rightIndex < rightLength)_$result[offset + rightIndex] = partials[rightIndex];
+            while(++holdersIndex < holdersLength)if (isUncurried || argsIndex < argsLength) _$result[offset + holders[holdersIndex]] = args[argsIndex++];
+            return _$result;
         }
         /**
      * Copies the values of `source` to `array`.
@@ -3672,7 +3678,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
                     customizer = length < 3 ? undefined : customizer;
                     length = 1;
                 }
-                object = Object(object);
+                object = _$Object(object);
                 while(++index < length){
                     var source = sources[index];
                     if (source) assigner(object, source, index, customizer);
@@ -3691,7 +3697,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
             return function(collection, iteratee) {
                 if (collection == null) return collection;
                 if (!isArrayLike(collection)) return eachFunc(collection, iteratee);
-                var length = collection.length, index = fromRight ? length : -1, iterable = Object(collection);
+                var length = collection.length, index = fromRight ? length : -1, iterable = _$Object(collection);
                 while(fromRight ? index-- : ++index < length){
                     if (iteratee(iterable[index], index, iterable) === false) break;
                 }
@@ -3706,7 +3712,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {Function} Returns the new base function.
      */ function createBaseFor(fromRight) {
             return function(object, iteratee, keysFunc) {
-                var index = -1, iterable = Object(object), props = keysFunc(object), length = props.length;
+                var index = -1, iterable = _$Object(object), props = keysFunc(object), length = props.length;
                 while(length--){
                     var key = props[fromRight ? length : ++index];
                     if (iteratee(iterable[key], key, iterable) === false) break;
@@ -3788,10 +3794,10 @@ parcelRequire.register("1E1MB", function(module, exports) {
                     case 7:
                         return new Ctor(args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
                 }
-                var thisBinding = baseCreate(Ctor.prototype), result = Ctor.apply(thisBinding, args);
+                var thisBinding = baseCreate(Ctor.prototype), _$result = Ctor.apply(thisBinding, args);
                 // Mimic the constructor's `return` behavior.
                 // See https://es5.github.io/#x13.2.2 for more details.
-                return isObject(result) ? result : thisBinding;
+                return isObject(_$result) ? _$result : thisBinding;
             };
         }
         /**
@@ -3823,16 +3829,16 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {Function} Returns the new find function.
      */ function createFind(findIndexFunc) {
             return function(collection, predicate, fromIndex) {
-                var iterable = Object(collection);
+                var iterable = _$Object(collection);
                 if (!isArrayLike(collection)) {
-                    var iteratee = getIteratee(predicate, 3);
+                    var _$iteratee = getIteratee(predicate, 3);
                     collection = keys(collection);
-                    predicate = function(key) {
-                        return iteratee(iterable[key], key, iterable);
+                    predicate = function predicate(key) {
+                        return _$iteratee(iterable[key], key, iterable);
                     };
                 }
                 var index = findIndexFunc(collection, predicate, fromIndex);
-                return index > -1 ? iterable[iteratee ? collection[index] : index] : undefined;
+                return index > -1 ? iterable[_$iteratee ? collection[index] : index] : undefined;
             };
         }
         /**
@@ -3860,9 +3866,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
                 return function() {
                     var args = arguments, value = args[0];
                     if (wrapper && args.length == 1 && isArray(value)) return wrapper.plant(value).value();
-                    var index = 0, result = length ? funcs[index].apply(this, args) : value;
-                    while(++index < length)result = funcs[index].call(this, result);
-                    return result;
+                    var index = 0, _$result = length ? funcs[index].apply(this, args) : value;
+                    while(++index < length)_$result = funcs[index].call(this, _$result);
+                    return _$result;
                 };
             });
         }
@@ -3928,11 +3934,11 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {Function} Returns the new mathematical operation function.
      */ function createMathOperation(operator, defaultValue) {
             return function(value, other) {
-                var result;
+                var _$result;
                 if (value === undefined && other === undefined) return defaultValue;
-                if (value !== undefined) result = value;
+                if (value !== undefined) _$result = value;
                 if (other !== undefined) {
-                    if (result === undefined) return other;
+                    if (_$result === undefined) return other;
                     if (typeof value == "string" || typeof other == "string") {
                         value = baseToString(value);
                         other = baseToString(other);
@@ -3940,9 +3946,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
                         value = baseToNumber(value);
                         other = baseToNumber(other);
                     }
-                    result = operator(value, other);
+                    _$result = operator(value, other);
                 }
-                return result;
+                return _$result;
             };
         }
         /**
@@ -3974,8 +3980,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
             chars = chars === undefined ? " " : baseToString(chars);
             var charsLength = chars.length;
             if (charsLength < 2) return charsLength ? baseRepeat(chars, length) : chars;
-            var result = baseRepeat(chars, nativeCeil(length / stringSize(chars)));
-            return hasUnicode(chars) ? castSlice(stringToArray(result), 0, length).join("") : result.slice(0, length);
+            var _$result = baseRepeat(chars, nativeCeil(length / stringSize(chars)));
+            return hasUnicode(chars) ? castSlice(stringToArray(_$result), 0, length).join("") : _$result.slice(0, length);
         }
         /**
      * Creates a function that wraps `func` to invoke it with the `this` binding
@@ -4065,10 +4071,10 @@ parcelRequire.register("1E1MB", function(module, exports) {
                 ary,
                 arity
             ];
-            var result = wrapFunc.apply(undefined, newData);
-            if (isLaziable(func)) setData(result, newData);
-            result.placeholder = placeholder;
-            return setWrapToString(result, func, bitmask);
+            var _$result = wrapFunc.apply(undefined, newData);
+            if (isLaziable(func)) setData(_$result, newData);
+            _$result.placeholder = placeholder;
+            return setWrapToString(_$result, func, bitmask);
         }
         /**
      * Creates a function like `_.round`.
@@ -4100,7 +4106,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      */ var createSet = !(Set && 1 / setToArray(new Set([
             ,
             -0
-        ]))[1] == INFINITY) ? noop : function(values) {
+        ]))[1] == INFINITY) ? noop : function createSet(values) {
             return new Set(values);
         };
         /**
@@ -4177,12 +4183,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
             holders = newData[4];
             arity = newData[9] = newData[9] === undefined ? isBindKey ? 0 : func.length : nativeMax(newData[9] - length, 0);
             if (!arity && bitmask & (WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG)) bitmask &= ~(WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG);
-            if (!bitmask || bitmask == WRAP_BIND_FLAG) var result = createBind(func, bitmask, thisArg);
-            else if (bitmask == WRAP_CURRY_FLAG || bitmask == WRAP_CURRY_RIGHT_FLAG) result = createCurry(func, bitmask, arity);
-            else if ((bitmask == WRAP_PARTIAL_FLAG || bitmask == (WRAP_BIND_FLAG | WRAP_PARTIAL_FLAG)) && !holders.length) result = createPartial(func, bitmask, thisArg, partials);
-            else result = createHybrid.apply(undefined, newData);
+            if (!bitmask || bitmask == WRAP_BIND_FLAG) var _$result = createBind(func, bitmask, thisArg);
+            else if (bitmask == WRAP_CURRY_FLAG || bitmask == WRAP_CURRY_RIGHT_FLAG) _$result = createCurry(func, bitmask, arity);
+            else if ((bitmask == WRAP_PARTIAL_FLAG || bitmask == (WRAP_BIND_FLAG | WRAP_PARTIAL_FLAG)) && !holders.length) _$result = createPartial(func, bitmask, thisArg, partials);
+            else _$result = createHybrid.apply(undefined, newData);
             var setter = data ? baseSetData : setData;
-            return setWrapToString(setter(result, newData), func, bitmask);
+            return setWrapToString(setter(_$result, newData), func, bitmask);
         }
         /**
      * Used by `_.defaults` to customize its `_.assignIn` use to assign properties
@@ -4251,7 +4257,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
             var arrStacked = stack.get(array);
             var othStacked = stack.get(other);
             if (arrStacked && othStacked) return arrStacked == other && othStacked == array;
-            var index = -1, result = true, seen = bitmask & COMPARE_UNORDERED_FLAG ? new SetCache : undefined;
+            var index = -1, _$result = true, seen = bitmask & COMPARE_UNORDERED_FLAG ? new SetCache : undefined;
             stack.set(array, other);
             stack.set(other, array);
             // Ignore non-index properties.
@@ -4260,7 +4266,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
                 if (customizer) var compared = isPartial ? customizer(othValue1, arrValue, index, other, array, stack) : customizer(arrValue, othValue1, index, array, other, stack);
                 if (compared !== undefined) {
                     if (compared) continue;
-                    result = false;
+                    _$result = false;
                     break;
                 }
                 // Recursively compare arrays (susceptible to call stack limits).
@@ -4268,17 +4274,17 @@ parcelRequire.register("1E1MB", function(module, exports) {
                     if (!arraySome(other, function(othValue, othIndex) {
                         if (!cacheHas(seen, othIndex) && (arrValue === othValue || equalFunc(arrValue, othValue, bitmask, customizer, stack))) return seen.push(othIndex);
                     })) {
-                        result = false;
+                        _$result = false;
                         break;
                     }
                 } else if (!(arrValue === othValue1 || equalFunc(arrValue, othValue1, bitmask, customizer, stack))) {
-                    result = false;
+                    _$result = false;
                     break;
                 }
             }
             stack["delete"](array);
             stack["delete"](other);
-            return result;
+            return _$result;
         }
         /**
      * A specialized version of `baseIsEqualDeep` for comparing objects of
@@ -4331,9 +4337,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
                     bitmask |= COMPARE_UNORDERED_FLAG;
                     // Recursively compare objects (susceptible to call stack limits).
                     stack.set(object, other);
-                    var result = equalArrays(convert(object), convert(other), bitmask, customizer, equalFunc, stack);
+                    var _$result = equalArrays(convert(object), convert(other), bitmask, customizer, equalFunc, stack);
                     stack["delete"](object);
-                    return result;
+                    return _$result;
                 case symbolTag:
                     if (symbolValueOf) return symbolValueOf.call(object) == symbolValueOf.call(other);
             }
@@ -4363,7 +4369,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
             var objStacked = stack.get(object);
             var othStacked = stack.get(other);
             if (objStacked && othStacked) return objStacked == other && othStacked == object;
-            var result = true;
+            var _$result = true;
             stack.set(object, other);
             stack.set(other, object);
             var skipCtor = isPartial;
@@ -4373,19 +4379,19 @@ parcelRequire.register("1E1MB", function(module, exports) {
                 if (customizer) var compared = isPartial ? customizer(othValue, objValue, key, other, object, stack) : customizer(objValue, othValue, key, object, other, stack);
                 // Recursively compare objects (susceptible to call stack limits).
                 if (!(compared === undefined ? objValue === othValue || equalFunc(objValue, othValue, bitmask, customizer, stack) : compared)) {
-                    result = false;
+                    _$result = false;
                     break;
                 }
                 skipCtor || (skipCtor = key == "constructor");
             }
-            if (result && !skipCtor) {
+            if (_$result && !skipCtor) {
                 var objCtor = object.constructor, othCtor = other.constructor;
                 // Non `Object` object instances with different constructors are not equal.
-                if (objCtor != othCtor && "constructor" in object && "constructor" in other && !(typeof objCtor == "function" && objCtor instanceof objCtor && typeof othCtor == "function" && othCtor instanceof othCtor)) result = false;
+                if (objCtor != othCtor && "constructor" in object && "constructor" in other && !(typeof objCtor == "function" && objCtor instanceof objCtor && typeof othCtor == "function" && othCtor instanceof othCtor)) _$result = false;
             }
             stack["delete"](object);
             stack["delete"](other);
-            return result;
+            return _$result;
         }
         /**
      * A specialized version of `baseRest` which flattens the rest array.
@@ -4421,7 +4427,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @private
      * @param {Function} func The function to query.
      * @returns {*} Returns the metadata for `func`.
-     */ var getData = !metaMap ? noop : function(func) {
+     */ var getData = !metaMap ? noop : function getData(func) {
             return metaMap.get(func);
         };
         /**
@@ -4431,12 +4437,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} func The function to query.
      * @returns {string} Returns the function name.
      */ function getFuncName(func) {
-            var result = func.name + "", array = realNames[result], length = hasOwnProperty.call(realNames, result) ? array.length : 0;
+            var _$result = func.name + "", array = realNames[_$result], length = hasOwnProperty.call(realNames, _$result) ? array.length : 0;
             while(length--){
                 var data = array[length], otherFunc = data.func;
                 if (otherFunc == null || otherFunc == func) return data.name;
             }
-            return result;
+            return _$result;
         }
         /**
      * Gets the argument placeholder value for `func`.
@@ -4459,9 +4465,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {number} [arity] The arity of the created iteratee.
      * @returns {Function} Returns the chosen function or its result.
      */ function getIteratee() {
-            var result = lodash.iteratee || iteratee1;
-            result = result === iteratee1 ? baseIteratee : result;
-            return arguments.length ? result(arguments[0], arguments[1]) : result;
+            var _$result = lodash.iteratee || iteratee1;
+            _$result = _$result === iteratee1 ? baseIteratee : _$result;
+            return arguments.length ? _$result(arguments[0], arguments[1]) : _$result;
         }
         /**
      * Gets the data for `map`.
@@ -4481,16 +4487,16 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Object} object The object to query.
      * @returns {Array} Returns the match data of `object`.
      */ function getMatchData(object) {
-            var result = keys(object), length = result.length;
+            var _$result = keys(object), length = _$result.length;
             while(length--){
-                var key = result[length], value = object[key];
-                result[length] = [
+                var key = _$result[length], value = object[key];
+                _$result[length] = [
                     key,
                     value,
                     isStrictComparable(value)
                 ];
             }
-            return result;
+            return _$result;
         }
         /**
      * Gets the native function at `key` of `object`.
@@ -4515,12 +4521,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
                 value[symToStringTag] = undefined;
                 var unmasked = true;
             } catch (e) {}
-            var result = nativeObjectToString.call(value);
+            var _$result = nativeObjectToString.call(value);
             if (unmasked) {
                 if (isOwn) value[symToStringTag] = tag;
                 else delete value[symToStringTag];
             }
-            return result;
+            return _$result;
         }
         /**
      * Creates an array of the own enumerable symbols of `object`.
@@ -4528,9 +4534,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @private
      * @param {Object} object The object to query.
      * @returns {Array} Returns the array of symbols.
-     */ var getSymbols = !nativeGetSymbols ? stubArray : function(object) {
+     */ var getSymbols = !nativeGetSymbols ? stubArray : function getSymbols(object) {
             if (object == null) return [];
-            object = Object(object);
+            object = _$Object(object);
             return arrayFilter(nativeGetSymbols(object), function(symbol) {
                 return propertyIsEnumerable.call(object, symbol);
             });
@@ -4541,13 +4547,13 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @private
      * @param {Object} object The object to query.
      * @returns {Array} Returns the array of symbols.
-     */ var getSymbolsIn = !nativeGetSymbols ? stubArray : function(object) {
-            var result = [];
+     */ var getSymbolsIn = !nativeGetSymbols ? stubArray : function getSymbolsIn(object) {
+            var _$result = [];
             while(object){
-                arrayPush(result, getSymbols(object));
+                arrayPush(_$result, getSymbols(object));
                 object = getPrototype(object);
             }
-            return result;
+            return _$result;
         };
         /**
      * Gets the `toStringTag` of `value`.
@@ -4557,8 +4563,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {string} Returns the `toStringTag`.
      */ var getTag = baseGetTag;
         // Fallback for data views, maps, sets, and weak maps in IE 11 and promises in Node.js < 6.
-        if (DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag || Map && getTag(new Map) != mapTag || Promise && getTag(Promise.resolve()) != promiseTag || Set && getTag(new Set) != setTag || WeakMap && getTag(new WeakMap) != weakMapTag) getTag = function(value) {
-            var result = baseGetTag(value), Ctor = result == objectTag ? value.constructor : undefined, ctorString = Ctor ? toSource(Ctor) : "";
+        if (DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag || Map && getTag(new Map) != mapTag || Promise && getTag(Promise.resolve()) != promiseTag || Set && getTag(new Set) != setTag || WeakMap && getTag(new WeakMap) != weakMapTag) getTag = function getTag(value) {
+            var _$result = baseGetTag(value), Ctor = _$result == objectTag ? value.constructor : undefined, ctorString = Ctor ? toSource(Ctor) : "";
             if (ctorString) switch(ctorString){
                 case dataViewCtorString:
                     return dataViewTag;
@@ -4571,7 +4577,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
                 case weakMapCtorString:
                     return weakMapTag;
             }
-            return result;
+            return _$result;
         };
         /**
      * Gets the view, applying any `transforms` to the `start` and `end` positions.
@@ -4585,19 +4591,19 @@ parcelRequire.register("1E1MB", function(module, exports) {
      */ function getView(start, end, transforms) {
             var index = -1, length = transforms.length;
             while(++index < length){
-                var data = transforms[index], size = data.size;
+                var data = transforms[index], _$size = data.size;
                 switch(data.type){
                     case "drop":
-                        start += size;
+                        start += _$size;
                         break;
                     case "dropRight":
-                        end -= size;
+                        end -= _$size;
                         break;
                     case "take":
-                        end = nativeMin(end, start + size);
+                        end = nativeMin(end, start + _$size);
                         break;
                     case "takeRight":
-                        start = nativeMax(start, end - size);
+                        start = nativeMax(start, end - _$size);
                         break;
                 }
             }
@@ -4626,13 +4632,13 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {boolean} Returns `true` if `path` exists, else `false`.
      */ function hasPath(object, path, hasFunc) {
             path = castPath(path, object);
-            var index = -1, length = path.length, result = false;
+            var index = -1, length = path.length, _$result = false;
             while(++index < length){
                 var key = toKey(path[index]);
-                if (!(result = object != null && hasFunc(object, key))) break;
+                if (!(_$result = object != null && hasFunc(object, key))) break;
                 object = object[key];
             }
-            if (result || ++index != length) return result;
+            if (_$result || ++index != length) return _$result;
             length = object == null ? 0 : object.length;
             return !!length && isLength(length) && isIndex(key, length) && (isArray(object) || isArguments(object));
         }
@@ -4643,13 +4649,13 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Array} array The array to clone.
      * @returns {Array} Returns the initialized clone.
      */ function initCloneArray(array) {
-            var length = array.length, result = new array.constructor(length);
+            var length = array.length, _$result = new array.constructor(length);
             // Add properties assigned by `RegExp#exec`.
             if (length && typeof array[0] == "string" && hasOwnProperty.call(array, "index")) {
-                result.index = array.index;
-                result.input = array.input;
+                _$result.index = array.index;
+                _$result.input = array.input;
             }
-            return result;
+            return _$result;
         }
         /**
      * Initializes an object clone.
@@ -4736,7 +4742,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
      * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
      */ function isIndex(value, length) {
-            var type = typeof value;
+            var type = typeof value === "undefined" ? "undefined" : (0, (/*@__PURE__*/$parcel$interopDefault($1JNQi)))(value);
             length = length == null ? MAX_SAFE_INTEGER : length;
             return !!length && (type == "number" || type != "symbol" && reIsUint.test(value)) && value > -1 && value % 1 == 0 && value < length;
         }
@@ -4751,7 +4757,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      *  else `false`.
      */ function isIterateeCall(value, index, object) {
             if (!isObject(object)) return false;
-            var type = typeof index;
+            var type = typeof index === "undefined" ? "undefined" : (0, (/*@__PURE__*/$parcel$interopDefault($1JNQi)))(index);
             if (type == "number" ? isArrayLike(object) && isIndex(index, object.length) : type == "string" && index in object) return eq(object[index], value);
             return false;
         }
@@ -4764,9 +4770,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
      */ function isKey(value, object) {
             if (isArray(value)) return false;
-            var type = typeof value;
+            var type = typeof value === "undefined" ? "undefined" : (0, (/*@__PURE__*/$parcel$interopDefault($1JNQi)))(value);
             if (type == "number" || type == "symbol" || type == "boolean" || value == null || isSymbol(value)) return true;
-            return reIsPlainProp.test(value) || !reIsDeepProp.test(value) || object != null && value in Object(object);
+            return reIsPlainProp.test(value) || !reIsDeepProp.test(value) || object != null && value in _$Object(object);
         }
         /**
      * Checks if `value` is suitable for use as unique object key.
@@ -4775,7 +4781,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {*} value The value to check.
      * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
      */ function isKeyable(value) {
-            var type = typeof value;
+            var type = typeof value === "undefined" ? "undefined" : (0, (/*@__PURE__*/$parcel$interopDefault($1JNQi)))(value);
             return type == "string" || type == "number" || type == "symbol" || type == "boolean" ? value !== "__proto__" : value === null;
         }
         /**
@@ -4839,7 +4845,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      */ function matchesStrictComparable(key, srcValue) {
             return function(object) {
                 if (object == null) return false;
-                return object[key] === srcValue && (srcValue !== undefined || key in Object(object));
+                return object[key] === srcValue && (srcValue !== undefined || key in _$Object(object));
             };
         }
         /**
@@ -4850,12 +4856,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Function} func The function to have its output memoized.
      * @returns {Function} Returns the new memoized function.
      */ function memoizeCapped(func) {
-            var result = memoize(func, function(key) {
+            var _$result = memoize(func, function(key) {
                 if (cache.size === MAX_MEMOIZE_SIZE) cache.clear();
                 return key;
             });
-            var cache = result.cache;
-            return result;
+            var cache = _$result.cache;
+            return _$result;
         }
         /**
      * Merges the function metadata of `source` into `data`.
@@ -4918,9 +4924,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {Object} object The object to query.
      * @returns {Array} Returns the array of property names.
      */ function nativeKeysIn(object) {
-            var result = [];
-            if (object != null) for(var key in Object(object))result.push(key);
-            return result;
+            var _$result = [];
+            if (object != null) for(var key in _$Object(object))_$result.push(key);
+            return _$result;
         }
         /**
      * Converts `value` to a string using `Object.prototype.toString`.
@@ -5079,12 +5085,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @param {string} string The string to convert.
      * @returns {Array} Returns the property path array.
      */ var stringToPath = memoizeCapped(function(string) {
-            var result = [];
-            if (string.charCodeAt(0) === 46 /* . */ ) result.push("");
+            var _$result = [];
+            if (string.charCodeAt(0) === 46 /* . */ ) _$result.push("");
             string.replace(rePropName, function(match, number, quote, subString) {
-                result.push(quote ? subString.replace(reEscapeChar, "$1") : number || match);
+                _$result.push(quote ? subString.replace(reEscapeChar, "$1") : number || match);
             });
-            return result;
+            return _$result;
         });
         /**
      * Converts `value` to a string key if it's not a string or symbol.
@@ -5094,8 +5100,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {string|symbol} Returns the key.
      */ function toKey(value) {
             if (typeof value == "string" || isSymbol(value)) return value;
-            var result = value + "";
-            return result == "0" && 1 / value == -INFINITY ? "-0" : result;
+            var _$result = value + "";
+            return _$result == "0" && 1 / value == -INFINITY ? "-0" : _$result;
         }
         /**
      * Converts `func` to its source code.
@@ -5136,11 +5142,11 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * @returns {Object} Returns the cloned wrapper.
      */ function wrapperClone(wrapper) {
             if (wrapper instanceof LazyWrapper) return wrapper.clone();
-            var result = new LodashWrapper(wrapper.__wrapped__, wrapper.__chain__);
-            result.__actions__ = copyArray(wrapper.__actions__);
-            result.__index__ = wrapper.__index__;
-            result.__values__ = wrapper.__values__;
-            return result;
+            var _$result = new LodashWrapper(wrapper.__wrapped__, wrapper.__chain__);
+            _$result.__actions__ = copyArray(wrapper.__actions__);
+            _$result.__index__ = wrapper.__index__;
+            _$result.__values__ = wrapper.__values__;
+            return _$result;
         }
         /*------------------------------------------------------------------------*/ /**
      * Creates an array of elements split into groups the length of `size`.
@@ -5167,9 +5173,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
             else size = nativeMax(toInteger(size), 0);
             var length = array == null ? 0 : array.length;
             if (!length || size < 1) return [];
-            var index = 0, resIndex = 0, result = Array(nativeCeil(length / size));
-            while(index < length)result[resIndex++] = baseSlice(array, index, index += size);
-            return result;
+            var index = 0, resIndex = 0, _$result = Array(nativeCeil(length / size));
+            while(index < length)_$result[resIndex++] = baseSlice(array, index, index += size);
+            return _$result;
         }
         /**
      * Creates an array with all falsey values removed. The values `false`, `null`,
@@ -5186,12 +5192,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.compact([0, 1, false, 2, '', 3]);
      * // => [1, 2, 3]
      */ function compact(array) {
-            var index = -1, length = array == null ? 0 : array.length, resIndex = 0, result = [];
+            var index = -1, length = array == null ? 0 : array.length, resIndex = 0, _$result = [];
             while(++index < length){
                 var value = array[index];
-                if (value) result[resIndex++] = value;
+                if (value) _$result[resIndex++] = value;
             }
-            return result;
+            return _$result;
         }
         /**
      * Creates a new array concatenating `array` with any additional arrays
@@ -5272,9 +5278,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.differenceBy([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], 'x');
      * // => [{ 'x': 2 }]
      */ var differenceBy = baseRest(function(array, values) {
-            var iteratee = last(values);
-            if (isArrayLikeObject(iteratee)) iteratee = undefined;
-            return isArrayLikeObject(array) ? baseDifference(array, baseFlatten(values, 1, isArrayLikeObject, true), getIteratee(iteratee, 2)) : [];
+            var _$iteratee = last(values);
+            if (isArrayLikeObject(_$iteratee)) _$iteratee = undefined;
+            return isArrayLikeObject(array) ? baseDifference(array, baseFlatten(values, 1, isArrayLikeObject, true), getIteratee(_$iteratee, 2)) : [];
         });
         /**
      * This method is like `_.difference` except that it accepts `comparator`
@@ -5634,12 +5640,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.fromPairs([['a', 1], ['b', 2]]);
      * // => { 'a': 1, 'b': 2 }
      */ function fromPairs(pairs) {
-            var index = -1, length = pairs == null ? 0 : pairs.length, result = {};
+            var index = -1, length = pairs == null ? 0 : pairs.length, _$result = {};
             while(++index < length){
                 var pair = pairs[index];
-                result[pair[0]] = pair[1];
+                _$result[pair[0]] = pair[1];
             }
-            return result;
+            return _$result;
         }
         /**
      * Gets the first element of `array`.
@@ -5683,7 +5689,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * // Search from the `fromIndex`.
      * _.indexOf([1, 2, 1, 2], 2, 2);
      * // => 3
-     */ function indexOf1(array, value, fromIndex) {
+     */ function indexOf(array, value, fromIndex) {
             var length = array == null ? 0 : array.length;
             if (!length) return -1;
             var index = fromIndex == null ? 0 : toInteger(fromIndex);
@@ -5750,10 +5756,10 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.intersectionBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x');
      * // => [{ 'x': 1 }]
      */ var intersectionBy = baseRest(function(arrays) {
-            var iteratee = last(arrays), mapped = arrayMap(arrays, castArrayLikeObject);
-            if (iteratee === last(mapped)) iteratee = undefined;
+            var _$iteratee = last(arrays), mapped = arrayMap(arrays, castArrayLikeObject);
+            if (_$iteratee === last(mapped)) _$iteratee = undefined;
             else mapped.pop();
-            return mapped.length && mapped[0] === arrays[0] ? baseIntersection(mapped, getIteratee(iteratee, 2)) : [];
+            return mapped.length && mapped[0] === arrays[0] ? baseIntersection(mapped, getIteratee(_$iteratee, 2)) : [];
         });
         /**
      * This method is like `_.intersection` except that it accepts `comparator`
@@ -5987,11 +5993,11 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * console.log(pulled);
      * // => ['b', 'd']
      */ var pullAt = flatRest(function(array, indexes) {
-            var length = array == null ? 0 : array.length, result = baseAt(array, indexes);
+            var length = array == null ? 0 : array.length, _$result = baseAt(array, indexes);
             basePullAt(array, arrayMap(indexes, function(index) {
                 return isIndex(index, length) ? +index : index;
             }).sort(compareAscending));
-            return result;
+            return _$result;
         });
         /**
      * Removes all elements from `array` that `predicate` returns truthy for
@@ -6021,19 +6027,19 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * console.log(evens);
      * // => [2, 4]
      */ function remove(array, predicate) {
-            var result = [];
-            if (!(array && array.length)) return result;
+            var _$result = [];
+            if (!(array && array.length)) return _$result;
             var index = -1, indexes = [], length = array.length;
             predicate = getIteratee(predicate, 3);
             while(++index < length){
                 var value = array[index];
                 if (predicate(value, index, array)) {
-                    result.push(value);
+                    _$result.push(value);
                     indexes.push(index);
                 }
             }
             basePullAt(array, indexes);
-            return result;
+            return _$result;
         }
         /**
      * Reverses `array` so that the first element becomes the last, the second
@@ -6453,9 +6459,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.unionBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x');
      * // => [{ 'x': 1 }, { 'x': 2 }]
      */ var unionBy = baseRest(function(arrays) {
-            var iteratee = last(arrays);
-            if (isArrayLikeObject(iteratee)) iteratee = undefined;
-            return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true), getIteratee(iteratee, 2));
+            var _$iteratee = last(arrays);
+            if (isArrayLikeObject(_$iteratee)) _$iteratee = undefined;
+            return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true), getIteratee(_$iteratee, 2));
         });
         /**
      * This method is like `_.union` except that it accepts `comparator` which
@@ -6603,9 +6609,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * // => [3, 30, 300]
      */ function unzipWith(array, iteratee) {
             if (!(array && array.length)) return [];
-            var result = unzip(array);
-            if (iteratee == null) return result;
-            return arrayMap(result, function(group) {
+            var _$result = unzip(array);
+            if (iteratee == null) return _$result;
+            return arrayMap(_$result, function(group) {
                 return apply(iteratee, undefined, group);
             });
         }
@@ -6674,9 +6680,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.xorBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x');
      * // => [{ 'x': 2 }]
      */ var xorBy = baseRest(function(arrays) {
-            var iteratee = last(arrays);
-            if (isArrayLikeObject(iteratee)) iteratee = undefined;
-            return baseXor(arrayFilter(arrays, isArrayLikeObject), getIteratee(iteratee, 2));
+            var _$iteratee = last(arrays);
+            if (isArrayLikeObject(_$iteratee)) _$iteratee = undefined;
+            return baseXor(arrayFilter(arrays, isArrayLikeObject), getIteratee(_$iteratee, 2));
         });
         /**
      * This method is like `_.xor` except that it accepts `comparator` which is
@@ -6774,9 +6780,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * });
      * // => [111, 222]
      */ var zipWith = baseRest(function(arrays) {
-            var length = arrays.length, iteratee = length > 1 ? arrays[length - 1] : undefined;
-            iteratee = typeof iteratee == "function" ? (arrays.pop(), iteratee) : undefined;
-            return unzipWith(arrays, iteratee);
+            var length = arrays.length, _$iteratee = length > 1 ? arrays[length - 1] : undefined;
+            _$iteratee = typeof _$iteratee == "function" ? (arrays.pop(), _$iteratee) : undefined;
+            return unzipWith(arrays, _$iteratee);
         });
         /*------------------------------------------------------------------------*/ /**
      * Creates a `lodash` wrapper instance that wraps `value` with explicit method
@@ -6806,10 +6812,10 @@ parcelRequire.register("1E1MB", function(module, exports) {
      *   .head()
      *   .value();
      * // => 'pebbles is 1'
-     */ function chain1(value) {
-            var result = lodash(value);
-            result.__chain__ = true;
-            return result;
+     */ function chain(value) {
+            var _$result = lodash(value);
+            _$result.__chain__ = true;
+            return _$result;
         }
         /**
      * This method invokes `interceptor` and returns `value`. The interceptor
@@ -6878,7 +6884,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _(object).at(['a[0].b.c', 'a[1]']).value();
      * // => [3, 4]
      */ var wrapperAt = flatRest(function(paths) {
-            var length = paths.length, start = length ? paths[0] : 0, value = this.__wrapped__, interceptor = function(object) {
+            var length = paths.length, start = length ? paths[0] : 0, value = this.__wrapped__, interceptor = function interceptor(object) {
                 return baseAt(object, paths);
             };
             if (length > 1 || this.__actions__.length || !(value instanceof LazyWrapper) || !isIndex(start)) return this.thru(interceptor);
@@ -6922,7 +6928,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      *   .value();
      * // => { 'user': 'barney' }
      */ function wrapperChain() {
-            return chain1(this);
+            return chain(this);
         }
         /**
      * Executes the chain sequence and returns the wrapped result.
@@ -7025,18 +7031,18 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * wrapped.value();
      * // => [1, 4]
      */ function wrapperPlant(value) {
-            var result, parent = this;
+            var _$result, parent = this;
             while(parent instanceof baseLodash){
-                var clone = wrapperClone(parent);
-                clone.__index__ = 0;
-                clone.__values__ = undefined;
-                if (result) previous.__wrapped__ = clone;
-                else result = clone;
-                var previous = clone;
+                var _$clone = wrapperClone(parent);
+                _$clone.__index__ = 0;
+                _$clone.__values__ = undefined;
+                if (_$result) previous.__wrapped__ = _$clone;
+                else _$result = _$clone;
+                var previous = _$clone;
                 parent = parent.__wrapped__;
             }
             previous.__wrapped__ = value;
-            return result;
+            return _$result;
         }
         /**
      * This method is the wrapper version of `_.reverse`.
@@ -7441,7 +7447,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      *
      * _.includes('abcd', 'bc');
      * // => true
-     */ function includes1(collection, value, fromIndex, guard) {
+     */ function includes(collection, value, fromIndex, guard) {
             collection = isArrayLike(collection) ? collection : values1(collection);
             fromIndex = fromIndex && !guard ? toInteger(fromIndex) : 0;
             var length = collection.length;
@@ -7471,11 +7477,11 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.invokeMap([123, 456], String.prototype.split, '');
      * // => [['1', '2', '3'], ['4', '5', '6']]
      */ var invokeMap = baseRest(function(collection, path, args) {
-            var index = -1, isFunc = typeof path == "function", result = isArrayLike(collection) ? Array(collection.length) : [];
+            var index = -1, isFunc = typeof path == "function", _$result = isArrayLike(collection) ? Array(collection.length) : [];
             baseEach(collection, function(value) {
-                result[++index] = isFunc ? apply(path, value, args) : baseInvoke(value, path, args);
+                _$result[++index] = isFunc ? apply(path, value, args) : baseInvoke(value, path, args);
             });
-            return result;
+            return _$result;
         });
         /**
      * Creates an object composed of keys generated from the results of running
@@ -7986,13 +7992,13 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * jQuery(element).on('click', _.before(5, addContactToList));
      * // => Allows adding up to 4 contacts to the list.
      */ function before(n, func) {
-            var result;
+            var _$result;
             if (typeof func != "function") throw new TypeError(FUNC_ERROR_TEXT);
             n = toInteger(n);
             return function() {
-                if (--n > 0) result = func.apply(this, arguments);
+                if (--n > 0) _$result = func.apply(this, arguments);
                 if (n <= 1) func = undefined;
-                return result;
+                return _$result;
             };
         }
         /**
@@ -8131,9 +8137,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * // => [1, 2, 3]
      */ function curry(func, arity, guard) {
             arity = guard ? undefined : arity;
-            var result = createWrap(func, WRAP_CURRY_FLAG, undefined, undefined, undefined, undefined, undefined, arity);
-            result.placeholder = curry.placeholder;
-            return result;
+            var _$result = createWrap(func, WRAP_CURRY_FLAG, undefined, undefined, undefined, undefined, undefined, arity);
+            _$result.placeholder = curry.placeholder;
+            return _$result;
         }
         /**
      * This method is like `_.curry` except that arguments are applied to `func`
@@ -8174,9 +8180,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * // => [1, 2, 3]
      */ function curryRight(func, arity, guard) {
             arity = guard ? undefined : arity;
-            var result = createWrap(func, WRAP_CURRY_RIGHT_FLAG, undefined, undefined, undefined, undefined, undefined, arity);
-            result.placeholder = curryRight.placeholder;
-            return result;
+            var _$result = createWrap(func, WRAP_CURRY_RIGHT_FLAG, undefined, undefined, undefined, undefined, undefined, arity);
+            _$result.placeholder = curryRight.placeholder;
+            return _$result;
         }
         /**
      * Creates a debounced function that delays invoking `func` until after `wait`
@@ -8232,7 +8238,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * // Cancel the trailing debounced invocation.
      * jQuery(window).on('popstate', debounced.cancel);
      */ function debounce(func, wait, options) {
-            var lastArgs, lastThis, maxWait, result, timerId, lastCallTime, lastInvokeTime = 0, leading = false, maxing = false, trailing = true;
+            var lastArgs, lastThis, maxWait, _$result, timerId, lastCallTime, lastInvokeTime = 0, leading = false, maxing = false, trailing = true;
             if (typeof func != "function") throw new TypeError(FUNC_ERROR_TEXT);
             wait = toNumber(wait) || 0;
             if (isObject(options)) {
@@ -8245,8 +8251,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
                 var args = lastArgs, thisArg = lastThis;
                 lastArgs = lastThis = undefined;
                 lastInvokeTime = time;
-                result = func.apply(thisArg, args);
-                return result;
+                _$result = func.apply(thisArg, args);
+                return _$result;
             }
             function leadingEdge(time) {
                 // Reset any `maxWait` timer.
@@ -8254,7 +8260,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
                 // Start the timer for the trailing edge.
                 timerId = setTimeout(timerExpired, wait);
                 // Invoke the leading edge.
-                return leading ? invokeFunc(time) : result;
+                return leading ? invokeFunc(time) : _$result;
             }
             function remainingWait(time) {
                 var timeSinceLastCall = time - lastCallTime, timeSinceLastInvoke = time - lastInvokeTime, timeWaiting = wait - timeSinceLastCall;
@@ -8279,7 +8285,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
                 // debounced at least once.
                 if (trailing && lastArgs) return invokeFunc(time);
                 lastArgs = lastThis = undefined;
-                return result;
+                return _$result;
             }
             function cancel() {
                 if (timerId !== undefined) clearTimeout(timerId);
@@ -8287,7 +8293,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
                 lastArgs = lastCallTime = lastThis = timerId = undefined;
             }
             function flush() {
-                return timerId === undefined ? result : trailingEdge(now());
+                return timerId === undefined ? _$result : trailingEdge(now());
             }
             function debounced() {
                 var time = now(), isInvoking = shouldInvoke(time);
@@ -8304,7 +8310,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
                     }
                 }
                 if (timerId === undefined) timerId = setTimeout(timerExpired, wait);
-                return result;
+                return _$result;
             }
             debounced.cancel = cancel;
             debounced.flush = flush;
@@ -8419,9 +8425,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
             var memoized = function() {
                 var args = arguments, key = resolver ? resolver.apply(this, args) : args[0], cache = memoized.cache;
                 if (cache.has(key)) return cache.get(key);
-                var result = func.apply(this, args);
-                memoized.cache = cache.set(key, result) || cache;
-                return result;
+                var _$result = func.apply(this, args);
+                memoized.cache = cache.set(key, _$result) || cache;
+                return _$result;
             };
             memoized.cache = new (memoize.Cache || MapCache);
             return memoized;
@@ -8850,7 +8856,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * var shallow = _.clone(objects);
      * console.log(shallow[0] === objects[0]);
      * // => true
-     */ function clone1(value) {
+     */ function clone(value) {
             return baseClone(value, CLONE_SYMBOLS_FLAG);
         }
         /**
@@ -9065,7 +9071,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * // => false
      */ var isArguments = baseIsArguments(function() {
             return arguments;
-        }()) ? baseIsArguments : function(value) {
+        }()) ? baseIsArguments : function isArguments(value) {
             return isObjectLike(value) && hasOwnProperty.call(value, "callee") && !propertyIsEnumerable.call(value, "callee");
         };
         /**
@@ -9340,8 +9346,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * // => true
      */ function isEqualWith(value, other, customizer) {
             customizer = typeof customizer == "function" ? customizer : undefined;
-            var result = customizer ? customizer(value, other) : undefined;
-            return result === undefined ? baseIsEqual(value, other, undefined, customizer) : !!result;
+            var _$result = customizer ? customizer(value, other) : undefined;
+            return _$result === undefined ? baseIsEqual(value, other, undefined, customizer) : !!_$result;
         }
         /**
      * Checks if `value` is an `Error`, `EvalError`, `RangeError`, `ReferenceError`,
@@ -9497,7 +9503,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.isObject(null);
      * // => false
      */ function isObject(value) {
-            var type = typeof value;
+            var type = typeof value === "undefined" ? "undefined" : (0, (/*@__PURE__*/$parcel$interopDefault($1JNQi)))(value);
             return value != null && (type == "object" || type == "function");
         }
         /**
@@ -9872,7 +9878,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.isSymbol('abc');
      * // => false
      */ function isSymbol(value) {
-            return typeof value == "symbol" || isObjectLike(value) && baseGetTag(value) == symbolTag;
+            return (typeof value === "undefined" ? "undefined" : (0, (/*@__PURE__*/$parcel$interopDefault($1JNQi)))(value)) == "symbol" || isObjectLike(value) && baseGetTag(value) == symbolTag;
         }
         /**
      * Checks if `value` is classified as a typed array.
@@ -10082,8 +10088,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.toInteger('3.2');
      * // => 3
      */ function toInteger(value) {
-            var result = toFinite(value), remainder = result % 1;
-            return result === result ? remainder ? result - remainder : result : 0;
+            var _$result = toFinite(value), remainder = _$result % 1;
+            return _$result === _$result ? remainder ? _$result - remainder : _$result : 0;
         }
         /**
      * Converts `value` to an integer suitable for use as the length of an
@@ -10406,8 +10412,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * circle instanceof Shape;
      * // => true
      */ function create(prototype, properties) {
-            var result = baseCreate(prototype);
-            return properties == null ? result : baseAssign(result, properties);
+            var _$result = baseCreate(prototype);
+            return properties == null ? _$result : baseAssign(_$result, properties);
         }
         /**
      * Assigns own and inherited enumerable string keyed properties of source
@@ -10430,7 +10436,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
      * // => { 'a': 1, 'b': 2 }
      */ var defaults = baseRest(function(object, sources) {
-            object = Object(object);
+            object = _$Object(object);
             var index = -1;
             var length = sources.length;
             var guard = length > 2 ? sources[2] : undefined;
@@ -10735,8 +10741,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.get(object, 'a.b.c', 'default');
      * // => 'default'
      */ function get(object, path, defaultValue) {
-            var result = object == null ? undefined : baseGet(object, path);
-            return result === undefined ? defaultValue : result;
+            var _$result = object == null ? undefined : baseGet(object, path);
+            return _$result === undefined ? defaultValue : _$result;
         }
         /**
      * Checks if `path` is a direct property of `object`.
@@ -10942,12 +10948,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * });
      * // => { 'a1': 1, 'b2': 2 }
      */ function mapKeys(object2, iteratee) {
-            var result = {};
+            var _$result = {};
             iteratee = getIteratee(iteratee, 3);
             baseForOwn(object2, function(value, key, object) {
-                baseAssignValue(result, iteratee(value, key, object), value);
+                baseAssignValue(_$result, iteratee(value, key, object), value);
             });
-            return result;
+            return _$result;
         }
         /**
      * Creates an object with the same keys as `object` and values generated
@@ -10977,12 +10983,12 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.mapValues(users, 'age');
      * // => { 'fred': 40, 'pebbles': 1 } (iteration order is not guaranteed)
      */ function mapValues(object3, iteratee) {
-            var result = {};
+            var _$result = {};
             iteratee = getIteratee(iteratee, 3);
             baseForOwn(object3, function(value, key, object) {
-                baseAssignValue(result, key, iteratee(value, key, object));
+                baseAssignValue(_$result, key, iteratee(value, key, object));
             });
-            return result;
+            return _$result;
         }
         /**
      * This method is like `_.assign` except that it recursively merges own and
@@ -11070,19 +11076,19 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.omit(object, ['a', 'c']);
      * // => { 'b': '2' }
      */ var omit = flatRest(function(object, paths) {
-            var result = {};
-            if (object == null) return result;
+            var _$result = {};
+            if (object == null) return _$result;
             var isDeep = false;
             paths = arrayMap(paths, function(path) {
                 path = castPath(path, object);
                 isDeep || (isDeep = path.length > 1);
                 return path;
             });
-            copyObject(object, getAllKeysIn(object), result);
-            if (isDeep) result = baseClone(result, CLONE_DEEP_FLAG | CLONE_FLAT_FLAG | CLONE_SYMBOLS_FLAG, customOmitClone);
+            copyObject(object, getAllKeysIn(object), _$result);
+            if (isDeep) _$result = baseClone(_$result, CLONE_DEEP_FLAG | CLONE_FLAT_FLAG | CLONE_SYMBOLS_FLAG, customOmitClone);
             var length = paths.length;
-            while(length--)baseUnset(result, paths[length]);
-            return result;
+            while(length--)baseUnset(_$result, paths[length]);
+            return _$result;
         });
         /**
      * The opposite of `_.pickBy`; this method creates an object composed of
@@ -11227,7 +11233,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
      * _.set(object, ['x', '0', 'y', 'z'], 5);
      * console.log(object.x[0].y.z);
      * // => 5
-     */ function set1(object, path, value) {
+     */ function set(object, path, value) {
             return object == null ? object : baseSet(object, path, value);
         }
         /**
@@ -12210,7 +12216,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
             var imports = assignInWith({}, options.imports, settings.imports, customDefaultsAssignIn), importsKeys = keys(imports), importsValues = baseValues(imports, importsKeys);
             var isEscaping, isEvaluating, index = 0, interpolate = options.interpolate || reNoMatch, source = "__p += '";
             // Compile the regexp to match each delimiter.
-            var reDelimiters = RegExp((options.escape || reNoMatch).source + "|" + interpolate.source + "|" + (interpolate === reInterpolate ? reEsTemplate : reNoMatch).source + "|" + (options.evaluate || reNoMatch).source + "|$", "g");
+            var reDelimiters = _$RegExp((options.escape || reNoMatch).source + "|" + interpolate.source + "|" + (interpolate === reInterpolate ? reEsTemplate : reNoMatch).source + "|" + (options.evaluate || reNoMatch).source + "|$", "g");
             // Use a sourceURL for easier debugging.
             // The sourceURL gets injected into the source that's eval-ed, so be careful
             // to normalize all kinds of whitespace, so e.g. newlines (and unicode versions of it) can't sneak in
@@ -12245,14 +12251,14 @@ parcelRequire.register("1E1MB", function(module, exports) {
             source = (isEvaluating ? source.replace(reEmptyStringLeading, "") : source).replace(reEmptyStringMiddle, "$1").replace(reEmptyStringTrailing, "$1;");
             // Frame code as the function body.
             source = "function(" + (variable || "obj") + ") {\n" + (variable ? "" : "obj || (obj = {});\n") + "var __t, __p = ''" + (isEscaping ? ", __e = _.escape" : "") + (isEvaluating ? ", __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n" : ";\n") + source + "return __p\n}";
-            var result = attempt(function() {
-                return Function(importsKeys, sourceURL + "return " + source).apply(undefined, importsValues);
+            var _$result = attempt(function() {
+                return _$Function(importsKeys, sourceURL + "return " + source).apply(undefined, importsValues);
             });
             // Provide the compiled function's source by its `toString` method or
             // the `source` property as a convenience for inlining compiled templates.
-            result.source = source;
-            if (isError(result)) throw result;
-            return result;
+            _$result.source = source;
+            if (isError(_$result)) throw _$result;
+            return _$result;
         }
         /**
      * Converts `string`, as a whole, to lower case just like
@@ -12430,22 +12436,22 @@ parcelRequire.register("1E1MB", function(module, exports) {
             if (length >= strLength) return string;
             var end = length - stringSize(omission);
             if (end < 1) return omission;
-            var result = strSymbols ? castSlice(strSymbols, 0, end).join("") : string.slice(0, end);
-            if (separator === undefined) return result + omission;
-            if (strSymbols) end += result.length - end;
+            var _$result = strSymbols ? castSlice(strSymbols, 0, end).join("") : string.slice(0, end);
+            if (separator === undefined) return _$result + omission;
+            if (strSymbols) end += _$result.length - end;
             if (isRegExp(separator)) {
                 if (string.slice(end).search(separator)) {
-                    var match, substring = result;
-                    if (!separator.global) separator = RegExp(separator.source, toString(reFlags.exec(separator)) + "g");
+                    var match, substring = _$result;
+                    if (!separator.global) separator = _$RegExp(separator.source, toString(reFlags.exec(separator)) + "g");
                     separator.lastIndex = 0;
                     while(match = separator.exec(substring))var newEnd = match.index;
-                    result = result.slice(0, newEnd === undefined ? end : newEnd);
+                    _$result = _$result.slice(0, newEnd === undefined ? end : newEnd);
                 }
             } else if (string.indexOf(baseToString(separator), end) != end) {
-                var index = result.lastIndexOf(separator);
-                if (index > -1) result = result.slice(0, index);
+                var index = _$result.lastIndexOf(separator);
+                if (index > -1) _$result = _$result.slice(0, index);
             }
-            return result + omission;
+            return _$result + omission;
         }
         /**
      * The inverse of `_.escape`; this method converts the HTML entities
@@ -12983,21 +12989,21 @@ parcelRequire.register("1E1MB", function(module, exports) {
                 object = this;
                 methodNames = baseFunctions(source, keys(source));
             }
-            var chain = !(isObject(options) && "chain" in options) || !!options.chain, isFunc = isFunction(object);
+            var _$chain = !(isObject(options) && "chain" in options) || !!options.chain, isFunc = isFunction(object);
             arrayEach(methodNames, function(methodName) {
                 var func = source[methodName];
                 object[methodName] = func;
                 if (isFunc) object.prototype[methodName] = function() {
                     var chainAll = this.__chain__;
-                    if (chain || chainAll) {
-                        var result = object(this.__wrapped__), actions = result.__actions__ = copyArray(this.__actions__);
+                    if (_$chain || chainAll) {
+                        var _$result = object(this.__wrapped__), actions = _$result.__actions__ = copyArray(this.__actions__);
                         actions.push({
                             "func": func,
                             "args": arguments,
                             "thisArg": object
                         });
-                        result.__chain__ = chainAll;
-                        return result;
+                        _$result.__chain__ = chainAll;
+                        return _$result;
                     }
                     return func.apply(object, arrayPush([
                         this.value()
@@ -13373,9 +13379,9 @@ parcelRequire.register("1E1MB", function(module, exports) {
             var index = MAX_ARRAY_LENGTH, length = nativeMin(n, MAX_ARRAY_LENGTH);
             iteratee = getIteratee(iteratee);
             n -= MAX_ARRAY_LENGTH;
-            var result = baseTimes(length, iteratee);
+            var _$result = baseTimes(length, iteratee);
             while(++index < n)iteratee(index);
-            return result;
+            return _$result;
         }
         /**
      * Converts `value` to a property path array.
@@ -13735,7 +13741,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
         lodash.bindAll = bindAll;
         lodash.bindKey = bindKey;
         lodash.castArray = castArray;
-        lodash.chain = chain1;
+        lodash.chain = chain;
         lodash.chunk = chunk;
         lodash.compact = compact;
         lodash.concat = concat;
@@ -13825,7 +13831,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
         lodash.rest = rest;
         lodash.reverse = reverse;
         lodash.sampleSize = sampleSize;
-        lodash.set = set1;
+        lodash.set = set;
         lodash.setWith = setWith;
         lodash.shuffle = shuffle;
         lodash.slice = slice;
@@ -13886,7 +13892,7 @@ parcelRequire.register("1E1MB", function(module, exports) {
         lodash.capitalize = capitalize;
         lodash.ceil = ceil;
         lodash.clamp = clamp;
-        lodash.clone = clone1;
+        lodash.clone = clone;
         lodash.cloneDeep = cloneDeep;
         lodash.cloneDeepWith = cloneDeepWith;
         lodash.cloneWith = cloneWith;
@@ -13919,8 +13925,8 @@ parcelRequire.register("1E1MB", function(module, exports) {
         lodash.hasIn = hasIn;
         lodash.head = head;
         lodash.identity = identity;
-        lodash.includes = includes1;
-        lodash.indexOf = indexOf1;
+        lodash.includes = includes;
+        lodash.indexOf = indexOf;
         lodash.inRange = inRange;
         lodash.invoke = invoke;
         lodash.isArguments = isArguments;
@@ -14067,13 +14073,13 @@ parcelRequire.register("1E1MB", function(module, exports) {
         ], function(methodName, index) {
             LazyWrapper.prototype[methodName] = function(n) {
                 n = n === undefined ? 1 : nativeMax(toInteger(n), 0);
-                var result = this.__filtered__ && !index ? new LazyWrapper(this) : this.clone();
-                if (result.__filtered__) result.__takeCount__ = nativeMin(n, result.__takeCount__);
-                else result.__views__.push({
+                var _$result = this.__filtered__ && !index ? new LazyWrapper(this) : this.clone();
+                if (_$result.__filtered__) _$result.__takeCount__ = nativeMin(n, _$result.__takeCount__);
+                else _$result.__views__.push({
                     "size": nativeMin(n, MAX_ARRAY_LENGTH),
-                    "type": methodName + (result.__dir__ < 0 ? "Right" : "")
+                    "type": methodName + (_$result.__dir__ < 0 ? "Right" : "")
                 });
-                return result;
+                return _$result;
             };
             LazyWrapper.prototype[methodName + "Right"] = function(n) {
                 return this.reverse()[methodName](n).reverse();
@@ -14087,13 +14093,13 @@ parcelRequire.register("1E1MB", function(module, exports) {
         ], function(methodName, index) {
             var type = index + 1, isFilter = type == LAZY_FILTER_FLAG || type == LAZY_WHILE_FLAG;
             LazyWrapper.prototype[methodName] = function(iteratee) {
-                var result = this.clone();
-                result.__iteratees__.push({
+                var _$result = this.clone();
+                _$result.__iteratees__.push({
                     "iteratee": getIteratee(iteratee, 3),
                     "type": type
                 });
-                result.__filtered__ = result.__filtered__ || isFilter;
-                return result;
+                _$result.__filtered__ = _$result.__filtered__ || isFilter;
+                return _$result;
             };
         });
         // Add `LazyWrapper` methods for `_.head` and `_.last`.
@@ -14136,15 +14142,15 @@ parcelRequire.register("1E1MB", function(module, exports) {
         };
         LazyWrapper.prototype.slice = function(start, end) {
             start = toInteger(start);
-            var result = this;
-            if (result.__filtered__ && (start > 0 || end < 0)) return new LazyWrapper(result);
-            if (start < 0) result = result.takeRight(-start);
-            else if (start) result = result.drop(start);
+            var _$result = this;
+            if (_$result.__filtered__ && (start > 0 || end < 0)) return new LazyWrapper(_$result);
+            if (start < 0) _$result = _$result.takeRight(-start);
+            else if (start) _$result = _$result.drop(start);
             if (end !== undefined) {
                 end = toInteger(end);
-                result = end < 0 ? result.dropRight(-end) : result.take(end - start);
+                _$result = end < 0 ? _$result.dropRight(-end) : _$result.take(end - start);
             }
-            return result;
+            return _$result;
         };
         LazyWrapper.prototype.takeRightWhile = function(predicate) {
             return this.reverse().takeWhile(predicate).reverse();
@@ -14159,31 +14165,31 @@ parcelRequire.register("1E1MB", function(module, exports) {
             lodash.prototype[methodName] = function() {
                 var value1 = this.__wrapped__, args = isTaker ? [
                     1
-                ] : arguments, isLazy = value1 instanceof LazyWrapper, iteratee = args[0], useLazy = isLazy || isArray(value1);
-                var interceptor = function(value) {
-                    var result = lodashFunc.apply(lodash, arrayPush([
+                ] : arguments, isLazy = value1 instanceof LazyWrapper, _$iteratee = args[0], useLazy = isLazy || isArray(value1);
+                var interceptor = function interceptor(value) {
+                    var _$result = lodashFunc.apply(lodash, arrayPush([
                         value
                     ], args));
-                    return isTaker && chainAll ? result[0] : result;
+                    return isTaker && chainAll ? _$result[0] : _$result;
                 };
-                if (useLazy && checkIteratee && typeof iteratee == "function" && iteratee.length != 1) // Avoid lazy use if the iteratee has a "length" value other than `1`.
+                if (useLazy && checkIteratee && typeof _$iteratee == "function" && _$iteratee.length != 1) // Avoid lazy use if the iteratee has a "length" value other than `1`.
                 isLazy = useLazy = false;
                 var chainAll = this.__chain__, isHybrid = !!this.__actions__.length, isUnwrapped = retUnwrapped && !chainAll, onlyLazy = isLazy && !isHybrid;
                 if (!retUnwrapped && useLazy) {
                     value1 = onlyLazy ? value1 : new LazyWrapper(this);
-                    var result3 = func.apply(value1, args);
-                    result3.__actions__.push({
+                    var _$result1 = func.apply(value1, args);
+                    _$result1.__actions__.push({
                         "func": thru,
                         "args": [
                             interceptor
                         ],
                         "thisArg": undefined
                     });
-                    return new LodashWrapper(result3, chainAll);
+                    return new LodashWrapper(_$result1, chainAll);
                 }
                 if (isUnwrapped && onlyLazy) return func.apply(this, args);
-                result3 = this.thru(interceptor);
-                return isUnwrapped ? isTaker ? result3.value()[0] : result3.value() : result3;
+                _$result1 = this.thru(interceptor);
+                return isUnwrapped ? isTaker ? _$result1.value()[0] : _$result1.value() : _$result1;
             };
         });
         // Add `Array` methods to `lodash.prototype`.
@@ -14263,50 +14269,678 @@ parcelRequire.register("1E1MB", function(module, exports) {
         freeExports._ = _;
     } else // Export to the global object.
     root._ = _;
-}).call(this);
+}).call(undefined);
+
+});
+parcelRequire.register("1JNQi", function(module, exports) {
+"use strict";
+Object.defineProperty(module.exports, "__esModule", {
+    value: true
+});
+module.exports.default = $1440a81841a1b67f$var$_typeof;
+function $1440a81841a1b67f$var$_typeof(obj) {
+    "@swc/helpers - typeof";
+    return obj && obj.constructor === Symbol ? "symbol" : typeof obj;
+}
 
 });
 
-function $05dfd98a3a98cdc0$export$1d1c4391ecac81e8(name) {
-    fetch("https://restcountries.com/v3.1/name/" + name.trim()).then(async (response)=>{
-        if (response.status == 404) {
-            Notiflix.Notify.failure("Oops, there is no country with that name", {
-                timeout: 3000
+
+var $f1806f202985c507$exports = {};
+"use strict";
+Object.defineProperty($f1806f202985c507$exports, "__esModule", {
+    value: true
+});
+$f1806f202985c507$exports.default = $f1806f202985c507$var$_asyncToGenerator;
+function $f1806f202985c507$var$_asyncToGenerator(fn) {
+    return function() {
+        var self = this, args = arguments;
+        return new Promise(function(resolve, reject) {
+            var gen = fn.apply(self, args);
+            function _next(value) {
+                $f1806f202985c507$var$asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+            }
+            function _throw(err) {
+                $f1806f202985c507$var$asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+            }
+            _next(undefined);
+        });
+    };
+}
+function $f1806f202985c507$var$asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+    try {
+        var info = gen[key](arg);
+        var value = info.value;
+    } catch (error) {
+        reject(error);
+        return;
+    }
+    if (info.done) resolve(value);
+    else Promise.resolve(value).then(_next, _throw);
+}
+
+
+var $91c76f864d3cc086$exports = {};
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ var $91c76f864d3cc086$var$runtime = function(exports) {
+    "use strict";
+    var Op = Object.prototype;
+    var hasOwn = Op.hasOwnProperty;
+    var undefined; // More compressible than void 0.
+    var $Symbol = typeof Symbol === "function" ? Symbol : {};
+    var iteratorSymbol = $Symbol.iterator || "@@iterator";
+    var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+    var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+    function define(obj, key, value) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+        return obj[key];
+    }
+    try {
+        // IE 8 has a broken Object.defineProperty that only works on DOM objects.
+        define({}, "");
+    } catch (err1) {
+        define = function define(obj, key, value) {
+            return obj[key] = value;
+        };
+    }
+    function wrap(innerFn, outerFn, self, tryLocsList) {
+        // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+        var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+        var generator = Object.create(protoGenerator.prototype);
+        var context = new Context(tryLocsList || []);
+        // The ._invoke method unifies the implementations of the .next,
+        // .throw, and .return methods.
+        generator._invoke = makeInvokeMethod(innerFn, self, context);
+        return generator;
+    }
+    exports.wrap = wrap;
+    // Try/catch helper to minimize deoptimizations. Returns a completion
+    // record like context.tryEntries[i].completion. This interface could
+    // have been (and was previously) designed to take a closure to be
+    // invoked without arguments, but in all the cases we care about we
+    // already have an existing method we want to call, so there's no need
+    // to create a new function object. We can even get away with assuming
+    // the method takes exactly one argument, since that happens to be true
+    // in every case, so we don't have to touch the arguments object. The
+    // only additional allocation required is the completion record, which
+    // has a stable shape and so hopefully should be cheap to allocate.
+    function tryCatch(fn, obj, arg) {
+        try {
+            return {
+                type: "normal",
+                arg: fn.call(obj, arg)
+            };
+        } catch (err) {
+            return {
+                type: "throw",
+                arg: err
+            };
+        }
+    }
+    var GenStateSuspendedStart = "suspendedStart";
+    var GenStateSuspendedYield = "suspendedYield";
+    var GenStateExecuting = "executing";
+    var GenStateCompleted = "completed";
+    // Returning this object from the innerFn has the same effect as
+    // breaking out of the dispatch switch statement.
+    var ContinueSentinel = {};
+    // Dummy constructor functions that we use as the .constructor and
+    // .constructor.prototype properties for functions that return Generator
+    // objects. For full spec compliance, you may wish to configure your
+    // minifier not to mangle the names of these two functions.
+    function Generator() {}
+    function GeneratorFunction() {}
+    function GeneratorFunctionPrototype() {}
+    // This is a polyfill for %IteratorPrototype% for environments that
+    // don't natively support it.
+    var IteratorPrototype = {};
+    define(IteratorPrototype, iteratorSymbol, function() {
+        return this;
+    });
+    var getProto = Object.getPrototypeOf;
+    var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+    if (NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+    var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype);
+    GeneratorFunction.prototype = GeneratorFunctionPrototype;
+    define(Gp, "constructor", GeneratorFunctionPrototype);
+    define(GeneratorFunctionPrototype, "constructor", GeneratorFunction);
+    GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction");
+    // Helper for defining the .next, .throw, and .return methods of the
+    // Iterator interface in terms of a single ._invoke method.
+    function defineIteratorMethods(prototype) {
+        [
+            "next",
+            "throw",
+            "return"
+        ].forEach(function(method) {
+            define(prototype, method, function(arg) {
+                return this._invoke(method, arg);
             });
-            document.getElementById("result").innerHTML = "";
-            return;
-        }
-        if (response.status != 200) {
-            console.log(response.status);
-            console.log(response.statusText);
-            console.log(response.body);
-        }
-        var json = await response.json();
-        var html = "";
-        if (json.length > 10) Notiflix.Notify.info("Too many matches found. Please enter a more specific name.", {
-            timeout: 3000
         });
-        if (json.length == 1) {
-            const languagesValues = Object.values(json[0].languages);
-            html = `<div class="name">
-                      <img src="${json[0].flags.svg}" class="img"/>
-                      <h1>${json[0].name.official}</h1>
-                    </div>
-                    <p><strong>Capital:</strong> ${json[0].capital}</p>
-                    <p><strong>Population:</strong> ${json[0].population}</p>
-                    <p><strong>Languages:</strong> ${languagesValues.join(", ")}</p>
-                    `;
+    }
+    exports.isGeneratorFunction = function(genFun) {
+        var ctor = typeof genFun === "function" && genFun.constructor;
+        return ctor ? ctor === GeneratorFunction || // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction" : false;
+    };
+    exports.mark = function(genFun) {
+        if (Object.setPrototypeOf) Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+        else {
+            genFun.__proto__ = GeneratorFunctionPrototype;
+            define(genFun, toStringTagSymbol, "GeneratorFunction");
         }
-        if (json.length == 0) Notiflix.Notify.error("Oops, there is no country with that name", {
-            timeout: 3000
+        genFun.prototype = Object.create(Gp);
+        return genFun;
+    };
+    // Within the body of any async function, `await x` is transformed to
+    // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+    // `hasOwn.call(value, "__await")` to determine if the yielded value is
+    // meant to be awaited.
+    exports.awrap = function(arg) {
+        return {
+            __await: arg
+        };
+    };
+    function AsyncIterator(generator, PromiseImpl) {
+        function invoke(method, arg, resolve, reject) {
+            var record = tryCatch(generator[method], generator, arg);
+            if (record.type === "throw") reject(record.arg);
+            else {
+                var result = record.arg;
+                var value1 = result.value;
+                if (value1 && typeof value1 === "object" && hasOwn.call(value1, "__await")) return PromiseImpl.resolve(value1.__await).then(function(value) {
+                    invoke("next", value, resolve, reject);
+                }, function(err) {
+                    invoke("throw", err, resolve, reject);
+                });
+                return PromiseImpl.resolve(value1).then(function(unwrapped) {
+                    // When a yielded Promise is resolved, its final value becomes
+                    // the .value of the Promise<{value,done}> result for the
+                    // current iteration.
+                    result.value = unwrapped;
+                    resolve(result);
+                }, function(error) {
+                    // If a rejected Promise was yielded, throw the rejection back
+                    // into the async generator function so it can be handled there.
+                    return invoke("throw", error, resolve, reject);
+                });
+            }
+        }
+        var previousPromise;
+        function enqueue(method, arg) {
+            function callInvokeWithMethodAndArg() {
+                return new PromiseImpl(function(resolve, reject) {
+                    invoke(method, arg, resolve, reject);
+                });
+            }
+            return previousPromise = // If enqueue has been called before, then we want to wait until
+            // all previous Promises have been resolved before calling invoke,
+            // so that results are always delivered in the correct order. If
+            // enqueue has not been called before, then it is important to
+            // call invoke immediately, without waiting on a callback to fire,
+            // so that the async generator function has the opportunity to do
+            // any necessary setup in a predictable way. This predictability
+            // is why the Promise constructor synchronously invokes its
+            // executor callback, and why async functions synchronously
+            // execute code before the first await. Since we implement simple
+            // async functions in terms of async generators, it is especially
+            // important to get this right, even though it requires care.
+            previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, // Avoid propagating failures to Promises returned by later
+            // invocations of the iterator.
+            callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg();
+        }
+        // Define the unified helper method that is used to implement .next,
+        // .throw, and .return (see defineIteratorMethods).
+        this._invoke = enqueue;
+    }
+    defineIteratorMethods(AsyncIterator.prototype);
+    define(AsyncIterator.prototype, asyncIteratorSymbol, function() {
+        return this;
+    });
+    exports.AsyncIterator = AsyncIterator;
+    // Note that simple async functions are implemented on top of
+    // AsyncIterator objects; they just return a Promise for the value of
+    // the final result produced by the iterator.
+    exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+        if (PromiseImpl === void 0) PromiseImpl = Promise;
+        var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl);
+        return exports.isGeneratorFunction(outerFn) ? iter // If outerFn is a generator, return the full iterator.
+         : iter.next().then(function(result) {
+            return result.done ? result.value : iter.next();
         });
-        if (json.length >= 2 && json.length <= 10) {
-            html = '<ul class="no-padding">';
-            for(i in json)html += "<li class=" + list - item + "><img src=" + json[i].flags.svg + " class=" + list - img + "/>${json[i].name.official}</li>";
-            html += "</ul>";
+    };
+    function makeInvokeMethod(innerFn, self, context) {
+        var state = GenStateSuspendedStart;
+        return function invoke(method, arg) {
+            if (state === GenStateExecuting) throw new Error("Generator is already running");
+            if (state === GenStateCompleted) {
+                if (method === "throw") throw arg;
+                // Be forgiving, per 25.3.3.3.3 of the spec:
+                // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+                return doneResult();
+            }
+            context.method = method;
+            context.arg = arg;
+            while(true){
+                var delegate = context.delegate;
+                if (delegate) {
+                    var delegateResult = maybeInvokeDelegate(delegate, context);
+                    if (delegateResult) {
+                        if (delegateResult === ContinueSentinel) continue;
+                        return delegateResult;
+                    }
+                }
+                if (context.method === "next") // Setting context._sent for legacy support of Babel's
+                // function.sent implementation.
+                context.sent = context._sent = context.arg;
+                else if (context.method === "throw") {
+                    if (state === GenStateSuspendedStart) {
+                        state = GenStateCompleted;
+                        throw context.arg;
+                    }
+                    context.dispatchException(context.arg);
+                } else if (context.method === "return") context.abrupt("return", context.arg);
+                state = GenStateExecuting;
+                var record = tryCatch(innerFn, self, context);
+                if (record.type === "normal") {
+                    // If an exception is thrown from innerFn, we leave state ===
+                    // GenStateExecuting and loop back for another invocation.
+                    state = context.done ? GenStateCompleted : GenStateSuspendedYield;
+                    if (record.arg === ContinueSentinel) continue;
+                    return {
+                        value: record.arg,
+                        done: context.done
+                    };
+                } else if (record.type === "throw") {
+                    state = GenStateCompleted;
+                    // Dispatch the exception by looping back around to the
+                    // context.dispatchException(context.arg) call above.
+                    context.method = "throw";
+                    context.arg = record.arg;
+                }
+            }
+        };
+    }
+    // Call delegate.iterator[context.method](context.arg) and handle the
+    // result, either by returning a { value, done } result from the
+    // delegate iterator, or by modifying context.method and context.arg,
+    // setting context.delegate to null, and returning the ContinueSentinel.
+    function maybeInvokeDelegate(delegate, context) {
+        var method = delegate.iterator[context.method];
+        if (method === undefined) {
+            // A .throw or .return when the delegate iterator has no .throw
+            // method always terminates the yield* loop.
+            context.delegate = null;
+            if (context.method === "throw") {
+                // Note: ["return"] must be used for ES3 parsing compatibility.
+                if (delegate.iterator["return"]) {
+                    // If the delegate iterator has a return method, give it a
+                    // chance to clean up.
+                    context.method = "return";
+                    context.arg = undefined;
+                    maybeInvokeDelegate(delegate, context);
+                    if (context.method === "throw") // If maybeInvokeDelegate(context) changed context.method from
+                    // "return" to "throw", let that override the TypeError below.
+                    return ContinueSentinel;
+                }
+                context.method = "throw";
+                context.arg = new TypeError("The iterator does not provide a 'throw' method");
+            }
+            return ContinueSentinel;
         }
-        document.getElementById("result").innerHTML = html;
-    }).catch((error)=>{
+        var record = tryCatch(method, delegate.iterator, context.arg);
+        if (record.type === "throw") {
+            context.method = "throw";
+            context.arg = record.arg;
+            context.delegate = null;
+            return ContinueSentinel;
+        }
+        var info = record.arg;
+        if (!info) {
+            context.method = "throw";
+            context.arg = new TypeError("iterator result is not an object");
+            context.delegate = null;
+            return ContinueSentinel;
+        }
+        if (info.done) {
+            // Assign the result of the finished delegate to the temporary
+            // variable specified by delegate.resultName (see delegateYield).
+            context[delegate.resultName] = info.value;
+            // Resume execution at the desired location (see delegateYield).
+            context.next = delegate.nextLoc;
+            // If context.method was "throw" but the delegate handled the
+            // exception, let the outer generator proceed normally. If
+            // context.method was "next", forget context.arg since it has been
+            // "consumed" by the delegate iterator. If context.method was
+            // "return", allow the original .return call to continue in the
+            // outer generator.
+            if (context.method !== "return") {
+                context.method = "next";
+                context.arg = undefined;
+            }
+        } else // Re-yield the result returned by the delegate method.
+        return info;
+        // The delegate iterator is finished, so forget it and continue with
+        // the outer generator.
+        context.delegate = null;
+        return ContinueSentinel;
+    }
+    // Define Generator.prototype.{next,throw,return} in terms of the
+    // unified ._invoke helper method.
+    defineIteratorMethods(Gp);
+    define(Gp, toStringTagSymbol, "Generator");
+    // A Generator should always return itself as the iterator object when the
+    // @@iterator function is called on it. Some browsers' implementations of the
+    // iterator prototype chain incorrectly implement this, causing the Generator
+    // object to not be returned from this call. This ensures that doesn't happen.
+    // See https://github.com/facebook/regenerator/issues/274 for more details.
+    define(Gp, iteratorSymbol, function() {
+        return this;
+    });
+    define(Gp, "toString", function() {
+        return "[object Generator]";
+    });
+    function pushTryEntry(locs) {
+        var entry = {
+            tryLoc: locs[0]
+        };
+        if (1 in locs) entry.catchLoc = locs[1];
+        if (2 in locs) {
+            entry.finallyLoc = locs[2];
+            entry.afterLoc = locs[3];
+        }
+        this.tryEntries.push(entry);
+    }
+    function resetTryEntry(entry) {
+        var record = entry.completion || {};
+        record.type = "normal";
+        delete record.arg;
+        entry.completion = record;
+    }
+    function Context(tryLocsList) {
+        // The root entry object (effectively a try statement without a catch
+        // or a finally block) gives us a place to store values thrown from
+        // locations where there is no enclosing try statement.
+        this.tryEntries = [
+            {
+                tryLoc: "root"
+            }
+        ];
+        tryLocsList.forEach(pushTryEntry, this);
+        this.reset(true);
+    }
+    exports.keys = function(object) {
+        var keys = [];
+        for(var key1 in object)keys.push(key1);
+        keys.reverse();
+        // Rather than returning an object with a next method, we keep
+        // things simple and return the next function itself.
+        return function next() {
+            while(keys.length){
+                var key = keys.pop();
+                if (key in object) {
+                    next.value = key;
+                    next.done = false;
+                    return next;
+                }
+            }
+            // To avoid creating an additional object, we just hang the .value
+            // and .done properties off the next function object itself. This
+            // also ensures that the minifier will not anonymize the function.
+            next.done = true;
+            return next;
+        };
+    };
+    function values(iterable) {
+        if (iterable) {
+            var iteratorMethod = iterable[iteratorSymbol];
+            if (iteratorMethod) return iteratorMethod.call(iterable);
+            if (typeof iterable.next === "function") return iterable;
+            if (!isNaN(iterable.length)) {
+                var i = -1, next1 = function next() {
+                    while(++i < iterable.length)if (hasOwn.call(iterable, i)) {
+                        next.value = iterable[i];
+                        next.done = false;
+                        return next;
+                    }
+                    next.value = undefined;
+                    next.done = true;
+                    return next;
+                };
+                return next1.next = next1;
+            }
+        }
+        // Return an iterator with no values.
+        return {
+            next: doneResult
+        };
+    }
+    exports.values = values;
+    function doneResult() {
+        return {
+            value: undefined,
+            done: true
+        };
+    }
+    Context.prototype = {
+        constructor: Context,
+        reset: function reset(skipTempReset) {
+            this.prev = 0;
+            this.next = 0;
+            // Resetting context._sent for legacy support of Babel's
+            // function.sent implementation.
+            this.sent = this._sent = undefined;
+            this.done = false;
+            this.delegate = null;
+            this.method = "next";
+            this.arg = undefined;
+            this.tryEntries.forEach(resetTryEntry);
+            if (!skipTempReset) {
+                for(var name in this)// Not sure about the optimal order of these conditions:
+                if (name.charAt(0) === "t" && hasOwn.call(this, name) && !isNaN(+name.slice(1))) this[name] = undefined;
+            }
+        },
+        stop: function stop() {
+            this.done = true;
+            var rootEntry = this.tryEntries[0];
+            var rootRecord = rootEntry.completion;
+            if (rootRecord.type === "throw") throw rootRecord.arg;
+            return this.rval;
+        },
+        dispatchException: function dispatchException(exception) {
+            if (this.done) throw exception;
+            var context = this;
+            function handle(loc, caught) {
+                record.type = "throw";
+                record.arg = exception;
+                context.next = loc;
+                if (caught) {
+                    // If the dispatched exception was caught by a catch block,
+                    // then let that catch block handle the exception normally.
+                    context.method = "next";
+                    context.arg = undefined;
+                }
+                return !!caught;
+            }
+            for(var i = this.tryEntries.length - 1; i >= 0; --i){
+                var entry = this.tryEntries[i];
+                var record = entry.completion;
+                if (entry.tryLoc === "root") // Exception thrown outside of any try block that could handle
+                // it, so set the completion value of the entire function to
+                // throw the exception.
+                return handle("end");
+                if (entry.tryLoc <= this.prev) {
+                    var hasCatch = hasOwn.call(entry, "catchLoc");
+                    var hasFinally = hasOwn.call(entry, "finallyLoc");
+                    if (hasCatch && hasFinally) {
+                        if (this.prev < entry.catchLoc) return handle(entry.catchLoc, true);
+                        else if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
+                    } else if (hasCatch) {
+                        if (this.prev < entry.catchLoc) return handle(entry.catchLoc, true);
+                    } else if (hasFinally) {
+                        if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
+                    } else throw new Error("try statement without catch or finally");
+                }
+            }
+        },
+        abrupt: function abrupt(type, arg) {
+            for(var i = this.tryEntries.length - 1; i >= 0; --i){
+                var entry = this.tryEntries[i];
+                if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) {
+                    var finallyEntry = entry;
+                    break;
+                }
+            }
+            if (finallyEntry && (type === "break" || type === "continue") && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc) // Ignore the finally entry if control is not jumping to a
+            // location outside the try/catch block.
+            finallyEntry = null;
+            var record = finallyEntry ? finallyEntry.completion : {};
+            record.type = type;
+            record.arg = arg;
+            if (finallyEntry) {
+                this.method = "next";
+                this.next = finallyEntry.finallyLoc;
+                return ContinueSentinel;
+            }
+            return this.complete(record);
+        },
+        complete: function complete(record, afterLoc) {
+            if (record.type === "throw") throw record.arg;
+            if (record.type === "break" || record.type === "continue") this.next = record.arg;
+            else if (record.type === "return") {
+                this.rval = this.arg = record.arg;
+                this.method = "return";
+                this.next = "end";
+            } else if (record.type === "normal" && afterLoc) this.next = afterLoc;
+            return ContinueSentinel;
+        },
+        finish: function finish(finallyLoc) {
+            for(var i = this.tryEntries.length - 1; i >= 0; --i){
+                var entry = this.tryEntries[i];
+                if (entry.finallyLoc === finallyLoc) {
+                    this.complete(entry.completion, entry.afterLoc);
+                    resetTryEntry(entry);
+                    return ContinueSentinel;
+                }
+            }
+        },
+        "catch": function(tryLoc) {
+            for(var i = this.tryEntries.length - 1; i >= 0; --i){
+                var entry = this.tryEntries[i];
+                if (entry.tryLoc === tryLoc) {
+                    var record = entry.completion;
+                    if (record.type === "throw") {
+                        var thrown = record.arg;
+                        resetTryEntry(entry);
+                    }
+                    return thrown;
+                }
+            }
+            // The context.catch method must only be called with a location
+            // argument that corresponds to a known catch block.
+            throw new Error("illegal catch attempt");
+        },
+        delegateYield: function delegateYield(iterable, resultName, nextLoc) {
+            this.delegate = {
+                iterator: values(iterable),
+                resultName: resultName,
+                nextLoc: nextLoc
+            };
+            if (this.method === "next") // Deliberately forget the last sent value so that we don't
+            // accidentally pass it on to the delegate.
+            this.arg = undefined;
+            return ContinueSentinel;
+        }
+    };
+    // Regardless of whether this script is executing as a CommonJS module
+    // or not, return the runtime object so that we can declare the variable
+    // regeneratorRuntime in the outer scope, which allows this module to be
+    // injected easily by `bin/regenerator --include-runtime script.js`.
+    return exports;
+}($91c76f864d3cc086$exports);
+try {
+    regeneratorRuntime = $91c76f864d3cc086$var$runtime;
+} catch (accidentalStrictMode) {
+    // This module should not be running in strict mode, so the above
+    // assignment should always work unless something is misconfigured. Just
+    // in case runtime.js accidentally runs in strict mode, in modern engines
+    // we can explicitly access globalThis. In older engines we can escape
+    // strict mode using a global Function call. This could conceivably fail
+    // if a Content Security Policy forbids using Function, but in that case
+    // the proper solution is to fix the accidental strict mode problem. If
+    // you've misconfigured your bundler to force strict mode and applied a
+    // CSP to forbid Function, and you're not willing to fix either of those
+    // problems, please detail your unique predicament in a GitHub issue.
+    if (typeof globalThis === "object") globalThis.regeneratorRuntime = $91c76f864d3cc086$var$runtime;
+    else Function("r", "regeneratorRuntime = r")($91c76f864d3cc086$var$runtime);
+}
+
+
+function $bf6f8f8f21d81835$export$1d1c4391ecac81e8(name) {
+    fetch("https://restcountries.com/v3.1/name/" + name.trim()).then(function() {
+        var _ref = (0, (/*@__PURE__*/$parcel$interopDefault($f1806f202985c507$exports)))((0, (/*@__PURE__*/$parcel$interopDefault($91c76f864d3cc086$exports))).mark(function _callee(response) {
+            var json, html, languagesValues, i;
+            return (0, (/*@__PURE__*/$parcel$interopDefault($91c76f864d3cc086$exports))).wrap(function _callee$(_ctx) {
+                while(1)switch(_ctx.prev = _ctx.next){
+                    case 0:
+                        if (!(response.status == 404)) {
+                            _ctx.next = 4;
+                            break;
+                        }
+                        Notiflix.Notify.failure("Oops, there is no country with that name", {
+                            timeout: 3000
+                        });
+                        document.getElementById("result").innerHTML = "";
+                        return _ctx.abrupt("return");
+                    case 4:
+                        if (response.status != 200) {
+                            console.log(response.status);
+                            console.log(response.statusText);
+                            console.log(response.body);
+                        }
+                        _ctx.next = 7;
+                        return response.json();
+                    case 7:
+                        json = _ctx.sent;
+                        html = "";
+                        if (json.length > 10) Notiflix.Notify.info("Too many matches found. Please enter a more specific name.", {
+                            timeout: 3000
+                        });
+                        if (json.length == 1) {
+                            languagesValues = Object.values(json[0].languages);
+                            html = '<div class="name">\n                      <img src="'.concat(json[0].flags.svg, '" class="img"/>\n                      <h1>').concat(json[0].name.official, "</h1>\n                    </div>\n                    <p><strong>Capital:</strong> ").concat(json[0].capital, "</p>\n                    <p><strong>Population:</strong> ").concat(json[0].population, "</p>\n                    <p><strong>Languages:</strong> ").concat(languagesValues.join(", "), "</p>\n                    ");
+                        }
+                        if (json.length == 0) Notiflix.Notify.error("Oops, there is no country with that name", {
+                            timeout: 3000
+                        });
+                        if (json.length >= 2 && json.length <= 10) {
+                            html = '<ul class="no-padding">';
+                            for(i in json)html += '<li class="' + list - item + '"><img src="' + json[i].flags.svg + '" class="' + list - img + '"/>${json[i].name.official}</li>';
+                            html += "</ul>";
+                        }
+                        document.getElementById("result").innerHTML = html;
+                    case 14:
+                    case "end":
+                        return _ctx.stop();
+                }
+            }, _callee);
+        }));
+        return function(response) {
+            return _ref.apply(this, arguments);
+        };
+    }()).catch(function(error) {
         console.log(error);
         Notiflix.Notify.failure("Oops, there is no country with that name", {
             timeout: 3000
@@ -14316,11 +14950,11 @@ function $05dfd98a3a98cdc0$export$1d1c4391ecac81e8(name) {
 
 
 
-var $1E1MB = parcelRequire("1E1MB");
-const $6ec12aea1d79768d$var$searchBox = document.getElementById("search-box");
-const $6ec12aea1d79768d$var$debounced = $1E1MB.debounce((0, $05dfd98a3a98cdc0$export$1d1c4391ecac81e8), 300);
-$6ec12aea1d79768d$var$searchBox.addEventListener("input", (event)=>{
-    $6ec12aea1d79768d$var$debounced(event.target.value);
+var $kdl1L = parcelRequire("kdl1L");
+var $8aa9b52032c7e260$var$searchBox = document.getElementById("search-box");
+var $8aa9b52032c7e260$var$debounced = $kdl1L.debounce((0, $bf6f8f8f21d81835$export$1d1c4391ecac81e8), 300);
+$8aa9b52032c7e260$var$searchBox.addEventListener("input", function(event) {
+    $8aa9b52032c7e260$var$debounced(event.target.value);
 });
 
-
+})();
